@@ -1,0 +1,20 @@
+[Params]
+Colcount=5
+Rowcount=5
+MinLetters=7
+MaxLetters=7
+SolutionType=0
+[Data]
+Row 1=YTVSB
+Row 2=HWRLJ
+Row 3=GAOIE
+Row 4=UNFCX
+Row 5=ZPDKM
+[Words]
+Count=1
+Word 1=NO TARGET WORDS
+[Intro]
+Text=Find five 7-letter words with letters connected in any direction and no letter revisited within a word. Words definitions: dart-shooting tube, cattle tender, dictionary, a little bit bad, and  male spell caster.
+
+
+

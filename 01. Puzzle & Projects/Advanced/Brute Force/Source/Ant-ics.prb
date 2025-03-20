@@ -1,0 +1,26 @@
+Title
+Place ants in circle
+Description
+Three lines cross a circle dividing it into 7  
+parts.   Place 28 ants into the 7 parts so  that 
+there are an equal number  of ants on  each 
+side of each line.     
+
+(Solution may assume the each area has a 
+different number of ants or not by clicking the 
+"Multiple variables ..." checkbox.  Specify 
+fewer allowable solution integers to reduce the 
+number of solutions.)    
+Numbers
+1,2,3,4,5,6,7,8,9,10,11,12,13,14
+Equations
+A+B+C+D+E+F+G=28
+A+B+F=14
+B+C+D=14
+F+E+D=14
+Imagefile
+Ant-ics.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

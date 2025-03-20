@@ -1,0 +1,19 @@
+Title
+BinaryConversion
+Description
+Find integers between 6 and 15 inclusive 
+where the  second and third binary digits from 
+the right are the same.
+
+(Variable names chosen in the equations 
+below are a8, b4,  c2, and d1 for the 8,4,2,1 
+poistions respectively.)   
+Numbers
+0,1
+Equations
+2*(2*(2*a8+b4)+c2)+d1>5
+b4=c2
+SingleCharacterVariables?
+0
+DuplicateVarValuesOK?
+1

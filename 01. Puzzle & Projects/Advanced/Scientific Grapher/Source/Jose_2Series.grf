@@ -1,0 +1,14 @@
+[Expression1]
+ExpressionText=2*x+1
+MinV=-10
+MaxV=10
+NbrPoints=100
+AnglesInDegrees=1
+Title=
+[Expression2]
+ExpressionText= 2*x-1
+MinV=-10
+MaxV=10
+NbrPoints=100
+AnglesInDegrees=1
+Title=

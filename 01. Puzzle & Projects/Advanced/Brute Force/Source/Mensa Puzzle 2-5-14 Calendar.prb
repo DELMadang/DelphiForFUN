@@ -1,0 +1,54 @@
+Title
+Mensa Puzzler from 2-5-14 Calendar
+Description
+Put nickles, dimes, and quarters on    
+certain squares of this grid - 0 or  1   
+coin per square (no coin is OK).     
+The coins total value must equal the   
+ given value for each row, colimn, 
+and    major diagonal.  Several coins  
+  (indicated by their value) and one    
+blank space (the star) have been    
+placed to get you started,
+
+Source:  Mensa Page-A-Day Puzzle   
+ calendar, Feb 5, 2014.
+
+I generated equations using 17    
+letters "a" through "r"  which I prefilled 
+  in the image at right..   On my old   
+laptop, it took 30 minutes  to find the   
+solution and another 15  minutes to   
+verify that the solution is  unique.      
+
+I noticed  that "j" and "k", the two    
+empty squares in row three must    
+each have value 10.  Prefilling those   
+ squares with 10 and eliminating "j"    
+and "k" variables finds the solution 10 
+  times faster!  For really fast solving  
+however, try "Incremental Solve".       
+Numbers
+0, 5, 10, 25
+Equations
+;Diagonals
+a+f+n=45
+d+h+p=15
+;Rows
+a+b+c+d=25
+e+f+g+h+i=80
+;j+k=20
+l+m+n=25
+p+q+r=30
+;Columns
+a+e+l+p=25
+b+f+q=45
+c+g+m=40
+h+j+n+r=35
+d+i+k=35
+Imagefile
+Mensa Puzzle 2-5-14 Calendar.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+1

@@ -1,0 +1,15 @@
+[Expression1]
+ExpressionText=x=sin(a)*7*sin(2*a); y=cos(a)*7*sin(2*a)
+MinV=0
+MaxV=360
+NbrPoints=360
+AnglesInDegrees=1
+Title=
+
+[Expression2]
+ExpressionText=
+MinV=0
+MaxV=0
+NbrPoints=0
+AnglesInDegrees=0
+Title=

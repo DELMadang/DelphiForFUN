@@ -1,0 +1,15 @@
+[Expression1]
+ExpressionText=x^2-1
+MinV=-2
+MaxV=2
+NbrPoints=100
+AnglesInDegrees=1
+Title=
+
+[Expression2]
+ExpressionText=
+MinV=0
+MaxV=0
+NbrPoints=0
+AnglesInDegrees=0
+Title=

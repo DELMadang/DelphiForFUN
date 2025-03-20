@@ -1,0 +1,40 @@
+Title
+Coin Placing
+Description
+Pur nickels, dimes, and quarters on  
+certain squares of this grid - but no  
+more than one coin per square - so  
+that the coins total the amount shown 
+ for eachow, column, and long  
+diagonal.  Several coins (indicated by 
+ their values) and one blank space  
+(the star) have been placed to get  
+you started.
+
+Source: Mensa Calendar for June 25, 
+ 2014
+
+I assigned 17 variable letters "a"  
+through "q" by row and column to  
+develop the equations used to solve.  
+Numbers
+0,5,10,25
+Equations
+a+b+c+d=60
+e+f+g+h=40
+i+j=15
+k+l+m+n=15
+o+p+q=45
+a+e+k+o=50
+b+i+l+p=20
+f+m+q=40
+c+g+n=20
+d+h+j=45
+a+n=25
+d+g+l+o=50
+Imagefile
+Coin Placing.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+1

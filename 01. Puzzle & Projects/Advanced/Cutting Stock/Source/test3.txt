@@ -1,0 +1,86 @@
+1 8 2
+PARTS
+	Length	# Required
+	 44.00	20
+	 45.00	20
+	 46.00	20
+	 47.00	20
+	 48.00	20
+	 49.00	20
+	 50.00	20
+	200.00	20
+
+STOCK
+	Length	Cost
+	600.00	  1.00
+
+
+ --- Optimal Fractional Solution ---
+Pattern(1)  Stock length:    600.00  Needed:    1.32
+	Order length:  44.00  Number cut from each stock piece:     6
+	Order length:  48.00  Number cut from each stock piece:     7
+	Waste from each stock piece 0.00
+Pattern(2)  Stock length:    600.00  Needed:    1.08
+	Order length:  44.00  Number cut from each stock piece:     5
+	Order length:  45.00  Number cut from each stock piece:     3
+	Order length:  49.00  Number cut from each stock piece:     5
+	Waste from each stock piece 0.00
+Pattern(3)  Stock length:    600.00  Needed:    1.67
+	Order length:  46.00  Number cut from each stock piece:    12
+	Order length:  48.00  Number cut from each stock piece:     1
+	Waste from each stock piece 0.00
+Pattern(4)  Stock length:    600.00  Needed:    2.22
+	Order length:  44.00  Number cut from each stock piece:     3
+	Order length:  45.00  Number cut from each stock piece:     1
+	Order length:  47.00  Number cut from each stock piece:     9
+	Waste from each stock piece 0.00
+Pattern(5)  Stock length:    600.00  Needed:    1.82
+	Order length:  45.00  Number cut from each stock piece:     8
+	Order length:  48.00  Number cut from each stock piece:     5
+	Waste from each stock piece 0.00
+Pattern(6)  Stock length:    600.00  Needed:    1.22
+	Order length:  49.00  Number cut from each stock piece:    12
+	Waste from each stock piece 12.00
+Pattern(7)  Stock length:    600.00  Needed:    1.67
+	Order length:  50.00  Number cut from each stock piece:    12
+	Waste from each stock piece 0.00
+Pattern(8)  Stock length:    600.00  Needed:    6.67
+	Order length: 200.00  Number cut from each stock piece:     3
+	Waste from each stock piece 0.00
+Stock cost =      17.66
+
+
+
+ --- Optimal Integer Solutuion ---
+Pattern(1)  Stock length:    600.00  Needed: 2
+	Order length:  44.00  Number cut from each stock piece:     6
+	Order length:  48.00  Number cut from each stock piece:     7
+	Unused from each stock piece 0.00
+Pattern(2)  Stock length:    600.00  Needed: 1
+	Order length:  44.00  Number cut from each stock piece:     5
+	Order length:  45.00  Number cut from each stock piece:     3
+	Order length:  49.00  Number cut from each stock piece:     5
+	Unused from each stock piece 0.00
+Pattern(3)  Stock length:    600.00  Needed: 2
+	Order length:  46.00  Number cut from each stock piece:    12
+	Order length:  48.00  Number cut from each stock piece:     1
+	Unused from each stock piece 0.00
+Pattern(4)  Stock length:    600.00  Needed: 3
+	Order length:  44.00  Number cut from each stock piece:     3
+	Order length:  45.00  Number cut from each stock piece:     1
+	Order length:  47.00  Number cut from each stock piece:     9
+	Unused from each stock piece 0.00
+Pattern(5)  Stock length:    600.00  Needed: 2
+	Order length:  45.00  Number cut from each stock piece:     8
+	Order length:  48.00  Number cut from each stock piece:     5
+	Unused from each stock piece 0.00
+Pattern(6)  Stock length:    600.00  Needed: 2
+	Order length:  49.00  Number cut from each stock piece:    12
+	Unused from each stock piece 12.00
+Pattern(7)  Stock length:    600.00  Needed: 2
+	Order length:  50.00  Number cut from each stock piece:    12
+	Unused from each stock piece 0.00
+Pattern(8)  Stock length:    600.00  Needed: 7
+	Order length: 200.00  Number cut from each stock piece:     3
+	Unused from each stock piece 0.00
+Stock cost =      21.00

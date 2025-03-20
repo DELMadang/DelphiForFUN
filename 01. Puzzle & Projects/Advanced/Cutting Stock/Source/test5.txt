@@ -1,0 +1,47 @@
+2 4 2
+PARTS
+	Length	# Required
+	  8.00	2
+	  6.00	4
+	  4.00	5
+	  1.00	4
+
+STOCK
+	Length	Cost
+	 12.00	 12.00
+	 10.00	  9.00
+
+
+ --- Optimal Fractional Solution ---
+Pattern(2)  Stock length:     10.00  Needed:    4.00
+	Order length:   6.00  Number cut from each stock piece:     1
+	Order length:   4.00  Number cut from each stock piece:     1
+	Waste from each stock piece 0.00
+Pattern(3)  Stock length:     12.00  Needed:    0.33
+	Order length:   4.00  Number cut from each stock piece:     3
+	Waste from each stock piece 0.00
+Pattern(4)  Stock length:     10.00  Needed:    2.00
+	Order length:   8.00  Number cut from each stock piece:     1
+	Order length:   1.00  Number cut from each stock piece:     2
+	Waste from each stock piece 0.00
+Stock cost =      58.00
+
+
+
+ --- Optimal Integer Solutuion ---
+Pattern(1)  Stock length:     12.00  Needed: 0
+	Order length:   8.00  Number cut from each stock piece:     1
+	Order length:   4.00  Number cut from each stock piece:     1
+	Unused from each stock piece 0.00
+Pattern(2)  Stock length:     10.00  Needed: 4
+	Order length:   6.00  Number cut from each stock piece:     1
+	Order length:   4.00  Number cut from each stock piece:     1
+	Unused from each stock piece 0.00
+Pattern(3)  Stock length:     12.00  Needed: 1
+	Order length:   4.00  Number cut from each stock piece:     3
+	Unused from each stock piece 0.00
+Pattern(4)  Stock length:     10.00  Needed: 2
+	Order length:   8.00  Number cut from each stock piece:     1
+	Order length:   1.00  Number cut from each stock piece:     2
+	Unused from each stock piece 0.00
+Stock cost =      66.00

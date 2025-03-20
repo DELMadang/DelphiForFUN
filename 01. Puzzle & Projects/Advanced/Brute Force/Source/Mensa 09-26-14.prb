@@ -1,0 +1,29 @@
+Title
+Mensa 09-26-14
+Description
+Place the digits 1 to 9 into the empty   
+cells so that the three rows across   
+and three columns down form correct 
+  arithmetic statements.  All 
+operations   should be performed 
+from left to right   ignoring 
+mathematical order of   operations,  
+Equation variables "a" through "i" 
+were assigned left to right by row. 
+Numbers
+1-9
+Equations
+a+b-c=6
+d*e+f=5
+(g+h)/i=2
+(a*d)/g=4
+b-e-h=0
+c/f+i=8
+Imagefile
+Mensa 09-26-14.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0
+Divides must be exact?
+1

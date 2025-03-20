@@ -1,0 +1,23 @@
+[Expression1]
+ExpressionText=x=t; y=a*cosh(t/a)-a
+MinV=-2
+MaxV=2
+NbrPoints=200
+AnglesInDegrees=0
+Title=Catenary (Suspended chain) curve
+ConstantText=a=2
+AutoScale=1
+LeftScaleMin=-10
+LeftScaleMax=10
+
+[Expression2]
+ExpressionText=x=t; y=a*cosh(t/a)-a
+MinV=-2
+MaxV=2
+NbrPoints=200
+AnglesInDegrees=1
+Title=Smaller A ==> Steeper curve
+ConstantText=a=1
+AutoScale=1
+LeftScaleMin=-10
+LeftScaleMax=10

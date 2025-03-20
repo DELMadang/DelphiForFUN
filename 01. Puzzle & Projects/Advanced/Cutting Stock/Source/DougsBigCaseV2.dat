@@ -1,0 +1,158 @@
+3 19 2
+PARTS
+	Length	# Required
+	6994.00	3
+	5869.00	9
+	4949.00	1
+	4684.00	4
+	4644.00	6
+	4414.00	8
+	3404.00	1
+	3214.00	2
+	3204.00	2
+	1934.00	1
+	1794.00	5
+	1709.00	7
+	1504.00	1
+	1014.00	1
+	929.00	1
+	724.00	1
+	164.00	1
+	154.00	1
+	134.00	1
+
+STOCK
+	Length	Cost
+	15004.00	804.00
+	12004.00	604.00
+	5000.00	200.00
+
+
+
+ --- Optimal Fractional Solution ---
+Pattern(1)  Stock length:   5000.00  Needed:    0.63
+	Order length:1794.00  Number cut from each stock piece:     2
+	Order length:1014.00  Number cut from each stock piece:     1
+	Unused from each stock piece 398.00
+Pattern(3)  Stock length:   5000.00  Needed:    1.00
+	Order length:4949.00  Number cut from each stock piece:     1
+	Unused from each stock piece 51.00
+Pattern(4)  Stock length:   5000.00  Needed:    4.00
+	Order length:4684.00  Number cut from each stock piece:     1
+	Unused from each stock piece 316.00
+Pattern(8)  Stock length:  12004.00  Needed:    1.25
+	Order length:6994.00  Number cut from each stock piece:     1
+	Order length:3214.00  Number cut from each stock piece:     1
+	Order length:1794.00  Number cut from each stock piece:     1
+	Unused from each stock piece 2.00
+Pattern(9)  Stock length:   5000.00  Needed:    2.00
+	Order length:3204.00  Number cut from each stock piece:     1
+	Order length:1794.00  Number cut from each stock piece:     1
+	Unused from each stock piece 2.00
+Pattern(10)  Stock length:   5000.00  Needed:    0.50
+	Order length:1934.00  Number cut from each stock piece:     2
+	Order length: 929.00  Number cut from each stock piece:     1
+	Unused from each stock piece 203.00
+Pattern(11)  Stock length:   5000.00  Needed:    1.00
+	Order length:3404.00  Number cut from each stock piece:     1
+	Order length:1504.00  Number cut from each stock piece:     1
+	Unused from each stock piece 92.00
+Pattern(12)  Stock length:  12004.00  Needed:    0.82
+	Order length:1709.00  Number cut from each stock piece:     7
+	Unused from each stock piece 41.00
+Pattern(13)  Stock length:  15004.00  Needed:    0.38
+	Order length:6994.00  Number cut from each stock piece:     2
+	Order length:1014.00  Number cut from each stock piece:     1
+	Unused from each stock piece 2.00
+Pattern(14)  Stock length:   5000.00  Needed:    0.50
+	Order length:1794.00  Number cut from each stock piece:     1
+	Order length:1709.00  Number cut from each stock piece:     1
+	Order length: 724.00  Number cut from each stock piece:     2
+	Unused from each stock piece 49.00
+Pattern(15)  Stock length:   5000.00  Needed:    0.75
+	Order length:3214.00  Number cut from each stock piece:     1
+	Order length:1709.00  Number cut from each stock piece:     1
+	Unused from each stock piece 77.00
+Pattern(16)  Stock length:  15004.00  Needed:    0.50
+	Order length:6994.00  Number cut from each stock piece:     2
+	Order length: 929.00  Number cut from each stock piece:     1
+	Unused from each stock piece 87.00
+Pattern(17)  Stock length:  12004.00  Needed:    4.50
+	Order length:5869.00  Number cut from each stock piece:     2
+	Order length: 164.00  Number cut from each stock piece:     1
+	Unused from each stock piece 102.00
+Pattern(18)  Stock length:   5000.00  Needed:    6.00
+	Order length:4644.00  Number cut from each stock piece:     1
+	Order length: 154.00  Number cut from each stock piece:     2
+	Unused from each stock piece 48.00
+Pattern(19)  Stock length:   5000.00  Needed:    8.00
+	Order length:4414.00  Number cut from each stock piece:     1
+	Order length: 134.00  Number cut from each stock piece:     4
+	Unused from each stock piece 50.00
+Stock cost =    9547.64
+
+ --- Optimal Integer Solutuion ---
+Pattern(1)  Stock length:   5000.00  Needed: 1
+	Order length:1794.00  Number cut from each stock piece:     2
+	Order length:1014.00  Number cut from each stock piece:     1
+	Unused from each stock piece 398.00
+Pattern(3)  Stock length:   5000.00  Needed: 1
+	Order length:4949.00  Number cut from each stock piece:     1
+	Unused from each stock piece 51.00
+Pattern(4)  Stock length:   5000.00  Needed: 4
+	Order length:4684.00  Number cut from each stock piece:     1
+	Unused from each stock piece 316.00
+Pattern(7)  Stock length:  12004.00  Needed: 0
+	Order length:3404.00  Number cut from each stock piece:     3
+	Order length:1709.00  Number cut from each stock piece:     1
+	Unused from each stock piece 83.00
+Pattern(8)  Stock length:  12004.00  Needed: 2
+	Order length:6994.00  Number cut from each stock piece:     1
+	Order length:3214.00  Number cut from each stock piece:     1
+	Order length:1794.00  Number cut from each stock piece:     1
+	Unused from each stock piece 2.00
+Pattern(9)  Stock length:   5000.00  Needed: 2
+	Order length:3204.00  Number cut from each stock piece:     1
+	Order length:1794.00  Number cut from each stock piece:     1
+	Unused from each stock piece 2.00
+Pattern(10)  Stock length:   5000.00  Needed: 1
+	Order length:1934.00  Number cut from each stock piece:     2
+	Order length: 929.00  Number cut from each stock piece:     1
+	Unused from each stock piece 203.00
+Pattern(11)  Stock length:   5000.00  Needed: 1
+	Order length:3404.00  Number cut from each stock piece:     1
+	Order length:1504.00  Number cut from each stock piece:     1
+	Unused from each stock piece 92.00
+Pattern(12)  Stock length:  12004.00  Needed: 1
+	Order length:1709.00  Number cut from each stock piece:     7
+	Unused from each stock piece 41.00
+Pattern(13)  Stock length:  15004.00  Needed: 1
+	Order length:6994.00  Number cut from each stock piece:     2
+	Order length:1014.00  Number cut from each stock piece:     1
+	Unused from each stock piece 2.00
+Pattern(14)  Stock length:   5000.00  Needed: 1
+	Order length:1794.00  Number cut from each stock piece:     1
+	Order length:1709.00  Number cut from each stock piece:     1
+	Order length: 724.00  Number cut from each stock piece:     2
+	Unused from each stock piece 49.00
+Pattern(15)  Stock length:   5000.00  Needed: 1
+	Order length:3214.00  Number cut from each stock piece:     1
+	Order length:1709.00  Number cut from each stock piece:     1
+	Unused from each stock piece 77.00
+Pattern(16)  Stock length:  15004.00  Needed: 1
+	Order length:6994.00  Number cut from each stock piece:     2
+	Order length: 929.00  Number cut from each stock piece:     1
+	Unused from each stock piece 87.00
+Pattern(17)  Stock length:  12004.00  Needed: 5
+	Order length:5869.00  Number cut from each stock piece:     2
+	Order length: 164.00  Number cut from each stock piece:     1
+	Unused from each stock piece 102.00
+Pattern(18)  Stock length:   5000.00  Needed: 6
+	Order length:4644.00  Number cut from each stock piece:     1
+	Order length: 154.00  Number cut from each stock piece:     2
+	Unused from each stock piece 48.00
+Pattern(19)  Stock length:   5000.00  Needed: 8
+	Order length:4414.00  Number cut from each stock piece:     1
+	Order length: 134.00  Number cut from each stock piece:     4
+	Unused from each stock piece 50.00
+Stock cost =   11640.00

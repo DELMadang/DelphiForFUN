@@ -1,0 +1,1 @@
+Find a six-digit number in which the third digit is two less than the first, the fourth digit is 2 less than the second, and the last digit is five less than the first.  The sum of the fifth and sixth digits equals the first, and the sum of all the digits is 39.   

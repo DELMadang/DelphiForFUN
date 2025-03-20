@@ -1,0 +1,22 @@
+Title
+3X3 Magic Squares
+Description
+A Magic Square is a square arrangement of digits from1     
+through NxN   with the property that the numbers in each  
+row,   column and  each  of the 2 major diagonals sum to  
+the same   value.      Define the equations and solve for a  
+3X3 Magic  Square.  
+Numbers
+1,2,3,4,5,6,7,8,9
+Equations
+a+b+c=d+e+f 
+a+b+c=g+h+i 
+b+c=d+g 
+a+c=e+h 
+a+b=f+ i     
+b+c=e+i 
+a+b=e+g                                                                          
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

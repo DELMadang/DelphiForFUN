@@ -1,0 +1,19 @@
+Title
+Dumb_Bells
+Description
+Jeff, Jim, and John had nine dumb 
+bells between them.  Their weights 
+were 154,16,19,101,10,17,13,46, 
+and 22 lbs.  They each took three 
+and Jeff's choice weighed twice as 
+much as Jim's.
+How heavy was John's choice of 
+dumb bells?
+Numbers
+154,16,19,101,10,17,13,46,22
+Equations
+A+B+C=2*(D+E+F)
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

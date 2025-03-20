@@ -1,0 +1,15 @@
+[Expression1]
+ExpressionText=x=(1+2*sin(t/2))*cos(t); y=(1+2*sin(t/2))*sin(T)
+MinV=0
+MaxV=720
+NbrPoints=720
+AnglesInDegrees=1
+Title=
+
+[Expression2]
+ExpressionText=
+MinV=0
+MaxV=0
+NbrPoints=0
+AnglesInDegrees=0
+Title=

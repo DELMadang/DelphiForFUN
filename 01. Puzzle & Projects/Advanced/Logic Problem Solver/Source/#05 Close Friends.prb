@@ -1,0 +1,56 @@
+[DESCRIPTION]
+SOURCE1=PennyPress - Winter 1988  ( p 10)
+TEXT1= CLOSE FRIENDS
+TEXT2=
+TEXT3=Phyllis's four friends live with a few blocks of her own home.  The friend's houses,
+TEXT4=numbered 2,4,6,8,and 10 are all on different nearby streets.  From the information given,
+TEXT5=determine each friends first and last names, her house number, and street.
+TEXT6=
+TEXT7=1. Melanie, who lives on Laurel lane, often visits Sally, whose house number is higher that
+TEXT8=that of Miss Daley on Pine Road.
+TEXT9=
+TEXT10=2. The house number of Miss Zack is two higher than that of Miss McFee, who lives on
+TEXT11=Acorn Avenue.
+TEXT12=
+TEXT13=
+TEXT14=3. Miss Zack often goes to visit Lori on Woodland Drive.
+TEXT15=
+TEXT16=4. The girl from nbr 10 often spends the day with Rachael Lambert, who lives on
+TEXT17=Sycamore Street.
+TEXT18=
+TEXT19=5. Miss Lambert's house number is higher than Miss Hughes, whose best friend lives in
+TEXT20=nbr 2.
+VAR1=First,Lori,Melanie,Phyllis,Rachel,Sally
+VAR2=Last,Daley,Hughes,Lambert,McFee,Zack
+VAR3=Street,Acorn,Laurel,Pine,Sycamore,Woodland
+VAR4=H. Nbr,2,4,6,8,10
+CONNECTWORD1=First,last name is,last name isn't,Last
+CONNECTWORD2=First,lives on,doesn't live on,Street
+CONNECTWORD3=First,house number is,house number is not,H. Nbr
+CONNECTWORD4=Last,first name is,first name isn't,First
+CONNECTWORD5=Last,lives on,doesn't live on,Street
+CONNECTWORD6=Last,house number is,house number is not,H. Nbr
+CONNECTWORD7=Street,    is      ,    isn't    ,First
+CONNECTWORD8=Street,    is      ,    isn't    ,Last
+CONNECTWORD9=Street,    is      ,    isn't    ,H. Nbr
+CONNECTWORD10=H. Nbr,    is      ,    isn't    ,First
+CONNECTWORD11=H. Nbr,    is      ,    isn't    ,Last
+CONNECTWORD12=H. Nbr,    is      ,    isn't    ,Street
+CONNECTWORD13=,,,
+
+[ORIG]
+STMT1=,Melanie,Laurel,True
+STMT2=,Daley,Pine,True
+STMT3=,Sally,Daley,False
+STMT4=,McFee,Acorn,True
+STMT5=,Zack,Lori,False
+STMT6=,Lori,Woodland,True
+STMT7=,Rachel,Lambert,True
+STMT8=,Rachel,Sycamore,True
+STMT9=,Rachel,10,False
+STMT10=,Lambert,2,False
+STMT11=,Hughes,2,False
+SEP1=OR1,1,Sally,After,Daley,H. Nbr,Unknown,T
+SEP2=OR2,1,Zack,After,McFee,H. Nbr,2,T
+SEP3=OR3,1,Lambert,After,Hughes,H. Nbr,Unknown,T
+

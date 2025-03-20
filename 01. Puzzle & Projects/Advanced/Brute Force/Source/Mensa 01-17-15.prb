@@ -1,0 +1,25 @@
+Title
+Mensa 01-17-15
+Description
+Two people played a game the result  
+   being two unequal 3-digit scores     
+which sum to 800.  Each score     
+contains the the same 3 digits but  no 
+   digit value is repeated within a     
+score. 
+
+What were the scores?    
+Numbers
+1-9
+Equations
+; Zero is not a possibility because 1st digits must sum to 7 plus a carry, 
+; 2nd digits sum to 9 plus a carry, and 3 rd didits sum to 10   
+;   
+100*A+10*B+C+100*D+10*E+F=800
+;Necessary (and sufficient?) condition - try it and see:
+;       Pproduct of the 3 digits in each score must be equal
+A*B*C=D*E*F
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+1

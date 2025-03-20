@@ -1,0 +1,21 @@
+Title
+Long Division
+Description
+Substitute digits for the letters to make the long division     
+problem displayed at right an  accurate numeric  
+expression.   The leftmost  letter can't be zero in any word. 
+   Also, there   must be a  one-to-one mapping between  
+digits and   letters.    Adapted from the "Unsolved Puzzles"  
+section of   www.brainvista.com  
+Numbers
+0,1,2,3,4,5,6,7,8,9
+Equations
+O*(100*E+10*R+E)=1000*T+100*R+10*A+F
+T*(100*E+10*R+E)= 100*H+10*C+H
+100*O + 10*K + S - 100*H - 10*C - H = 100*F + 10*A + K
+Imagefile
+Long Division.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

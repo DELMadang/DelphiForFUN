@@ -1,0 +1,18 @@
+Title
+HOCUS-POCUS
+Description
+Solve the Alphametic "HOCUS+POCUS=PRESTO" where   
+each   letter represents a unique digit.  No number begins with 
+ a 0.
+Numbers
+0,1,2,3,4,5,6,7,8,9
+Equations
+H>0
+P>0
+; Original equation
+;10000*H+2000*O+200*C+20*U+2*S+10000*P=100000*P+10000*R+1000*E+100*S+10*T+O
+;  Replacement equation after multi-digit recogniotion added
+HOCUS + POCUS = PRESTO  
+
+SingleCharacterVariables?
+1

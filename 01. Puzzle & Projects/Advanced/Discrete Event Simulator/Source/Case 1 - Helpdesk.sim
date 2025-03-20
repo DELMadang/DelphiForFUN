@@ -1,0 +1,23 @@
+[Class A]
+Class=A
+Classname=Caller
+QDist=Exponential
+MeanInterArrivalTime=6
+GiveUpCost=0
+JobProfit=0
+WaitCostRate=0
+MaxWait=9999
+
+[Server  1A]
+ServerNbr=1
+ServerName=Help Desk
+Class=A
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=3
+CostRate=0
+
+[General]
+Description=Calls to a help information desk that has one clerk are believed to have a Poisson distribution with, an average arrival rate of 10 per hour.  The time to help each customer is assumed to be exponentially distributed with a mean of 3 minutes.  What is the  probability that a person calling in will have to wait?  What is the average number of users in the system?   Management will hire a second help desk person if they were convinced that a typical user would have to wait 3 minutes or more to be connected.  What call-in rate would justify this?                                                                                        Note: Poisson distributions are commonly used to describe arrival rates.  If arrivals are Poisson distributed, the inverse distribution, time between arrivals, is distributed exponentially with mean time time between arrivals equal to 1/(mean arrival rate).
+RunTime=1440
+Timeunits=3

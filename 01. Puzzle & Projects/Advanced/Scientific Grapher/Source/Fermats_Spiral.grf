@@ -1,0 +1,20 @@
+[Expression1]
+ExpressionText=x=sqrt(t*t/50)*cos(t); y=sqrt(t*t/50)*sin(t)
+MinV=0
+MaxV=1800
+NbrPoints=720
+AnglesInDegrees=1
+Title=
+AutoScale=1
+LeftScaleMin=-10
+LeftScaleMax=10
+[Expression2]
+ExpressionText=x=cos(t)*t; y=-sin(t)*t
+MinV=0
+MaxV=1800
+NbrPoints=720
+AnglesInDegrees=1
+Title=
+AutoScale=1
+LeftScaleMin=-10
+LeftScaleMax=10

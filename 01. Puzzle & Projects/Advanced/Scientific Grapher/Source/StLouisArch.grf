@@ -1,0 +1,22 @@
+[Expression1]
+ExpressionText=y= - a*cosh(x/a)+b
+ConstantText=a=127.7;    b=757.7
+MinV=-315
+MaxV=315
+AutoScale=1
+LeftScaleMin=-10
+LeftScaleMax=10
+NbrPoints=630
+AnglesInDegrees=0
+Title=Inverted Catenary (Gateway Arch) curve
+[expression2]
+ExpressionText=
+ConstantText=
+MinV=-300
+MaxV=300
+AutoScale=1
+LeftScaleMin=-10
+LeftScaleMax=10
+NbrPoints=100
+AnglesInDegrees=1
+Title=

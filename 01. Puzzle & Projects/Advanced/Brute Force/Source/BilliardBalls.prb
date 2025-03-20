@@ -1,0 +1,46 @@
+Title
+Billiard Balls
+Description
+The 10 Billiard balls have had their    
+numbers (1 through 10)  replaced by  
+  random letters but were arranged    
+according to these rules: 
+
+A.  Succesive balls in three-ball row   
+are  in ascending order and  differ by  
+ 3  from preceeding ball.  
+
+B. Three-ball  row sum = two-ball row 
+  sum.  
+
+C. Left  edge sum = 20.  
+
+D. Right edge sum =  20.  
+
+E. Two-ball row sum + one-ball  row   
+value = 20.    
+
+F. Adjacent  numbers in four-ball row   
+differ by  more than 1.       
+Numbers
+1-10
+Equations
+;RULE A
+g=f+3
+f=e+3
+;RULE B
+e+f+g=h+i
+;RULES  C,  D, & E
+a+e+h+j=20
+d+g+i+j=20
+h+i+j=20
+;RULE F
+abs(a-b)>1
+abs(b-c)>1
+abs(c-d)>1
+Imagefile
+BilliardBalls.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

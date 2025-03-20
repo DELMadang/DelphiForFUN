@@ -1,0 +1,22 @@
+[Expression1]
+ExpressionText=y=25+.25*x
+MinV=0
+MaxV=25
+NbrPoints=25
+AnglesInDegrees=0
+Title=Cost = $25 + 25 cents/trip
+Constanttext=
+AutoScale=1
+LeftScaleMin=-10
+LeftScaleMax=10
+
+[Expression2]
+ExpressionText=y=2*x
+MinV=0
+MaxV=25
+NbrPoints=25
+AnglesInDegrees=0
+Title=Cost=$2 per trip
+AutoScale=1
+LeftScaleMin=-10
+LeftScaleMax=10

@@ -1,0 +1,76 @@
+[Params]
+Colcount=16
+Rowcount=16
+MinLetters=3
+MaxLetters=11
+SolutionType=1
+Revisits=0
+[Data]
+Row 1=FORECASTYWFOGRTO
+Row 2=DPCWNTRTINVTEBHD
+Row 3=RITHOTENHENTSLEA
+Row 4=ISHGONDMRUEUFIRN
+Row 5=ZUGNHYSCPMNASZMR
+Row 6=ZIUIPEAHOEHDCZOO
+Row 7=LSONYSIRURRIEAMT
+Row 8=ELRTTRAEEMMALREP
+Row 9=IEDHSBUNNAILTDTF
+Row10=ECOGROHONAADIUER
+Row11=NOOIAERUPUCMIARE
+Row12=OLLLITSFQNTIRTHE
+Row13=LDFTNTASHOWEROYZ
+Row14=CYTILIBISIVOERTE
+Row15=YTIMONSOONONDLUS
+Row16=CCLOUDSEIRRULFSH
+[Intro]
+Text=Find the 40 target words appearing forwards or backwards in a vertical, horizontall or diagonal direction 
+direction and no letter revisited within a word. 
+Word  definitions are: dart-shooting tube, cattle tender, 
+dictionary, a little bit bad, and male spell caster.
+ 
+direction and no letter revisited within a word. 
+Word  definitions are: dart-shooting tube, cattle tender, 
+dictionary, a little bit bad, and male spell caster.
+
+[TargetWords]
+Count=40
+Word 1=BAROMETER
+Word 2=BLIZZARD
+Word 3=CELSIUS
+Word 4=CLOUDS
+Word 5=COLD
+Word 6=CYCLONE
+Word 7=DOWNPOUR
+Word 8=DRIZZLE
+Word 9=DROUGHT
+Word10=FAHRENHEIT
+Word11=FLOOD
+Word12=FLURRIES
+Word13=FOG
+Word14=FORECAST
+Word15=FREEZE
+Word16=FROST
+Word17=HAIL
+Word18=HOT
+Word19=HUMIDITY
+Word20=HURRICANE
+Word21=ICE
+Word22=LIGHTNING
+Word23=MIST
+Word24=MONSOON
+Word25=OVERCAST
+Word26=RAIN
+Word27=SHOWER
+Word28=SLEET
+Word29=SNOW
+Word30=SQUALL
+Word31=STORM
+Word32=SUNNY
+Word33=TEMPERATURE
+Word34=THERMOMETER
+Word35=THUNDER
+Word36=TORNADO
+Word37=TSUNAMI
+Word38=TYPHOON
+Word39=VISIBILITY
+Word40=WINDY

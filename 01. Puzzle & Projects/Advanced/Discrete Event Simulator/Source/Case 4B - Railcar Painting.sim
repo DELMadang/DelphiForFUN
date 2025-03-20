@@ -1,0 +1,23 @@
+[Class A]
+Class=A
+Classname=Cars
+QDist=Exponential
+MeanInterArrivalTime=5
+GiveUpCost=0
+JobProfit=0
+WaitCostRate=20
+MaxWait=9999
+
+[Server  1A]
+ServerNbr=1
+ServerName=Spray #1
+Class=A
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=3
+CostRate=22.8
+
+[General]
+Description=A railroad company paints its own railroad cars as needed.  Alternative 1 is to provide two paint shops, where painting is done by hand (one car at a time in each shop), for a total annual cost of $200,000.  Alternative 2 is to provide one spray shop with the same $200,000 annual cost.   In this case, the painting time for a car (again done one car at a time), is 3 hours.   For both alternatives, cars arrive according to a Poisson input, with a mean arrival rate of one every 5 hours.  The cost of idle time per car is $20/hour.  Which alternative should the railroad choose?  Assume that the paint shops are always open, i.e. they work 24x365=8.760 hours per year.
+RunTime=8760
+Timeunits=2

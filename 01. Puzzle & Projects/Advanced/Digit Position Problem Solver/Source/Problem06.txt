@@ -1,0 +1,1 @@
+Find a six-digit number in which the third digit is the product of the first and second digits, the second digit is half the first, the fourth digit is two less than the third, and the last digit is half the fourth.  The sum of all the digits is 24.

@@ -1,0 +1,21 @@
+Title
+BrainGames_12_12_13
+Description
+Hunting the Digits:
+
+Using the digits 1 through 9 place  
+one in each circle of the triangle at  
+right so that the sum of the digits on  
+each side is 20. 
+Numbers
+1-9
+Equations
+a+b+c+d=20
+d+e+f+g=20
+g+h+i+a=20
+Imagefile
+BrainGames_12_12_13.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

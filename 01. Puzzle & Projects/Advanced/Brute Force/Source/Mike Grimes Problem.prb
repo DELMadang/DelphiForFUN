@@ -1,0 +1,10 @@
+Title
+Mike Grimes Problem
+Description
+Mike Grimes' problem 
+
+Solve   a/(b*c) + (d*e*f)/g + h*i = 100
+Numbers
+1,2,3,4,5,6,7,8,9
+Equations
+a*g + b*c*d*e*f + b*c*g*h*i = 100*b*c*g

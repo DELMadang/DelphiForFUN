@@ -1,0 +1,29 @@
+[ORIG]
+STMT1= 2,Blake,Most,False,X
+SEP1=OR1, 1,Alex,Before,Least,Finish Order,Unknown,T,X
+SEP2=OR2, 3,Chris,After,3rd,Quantity,Unknown,T,X
+SEP3=OR3, 3,Chris,Before,Most,Finish Order,Unknown,T,X
+CHOICESTMT1=C1, 3,Chris,Quantity,Least,Just right,,X
+[DESCRIPTION]
+SOURCE1=Mensa Calendar November 24,2016
+TEXT1=Alex, Blake, and Chris sat down for Thanksgiving dinner.  Based on the statements below
+TEXT2=can you figure out their turkey consumption and order of finishing their meals in relation to
+TEXT3=each other?
+TEXT4=
+TEXT5=1. Alex ate faster than the person who ate the least amount of turkey.
+TEXT6=
+TEXT7=2. Blake did not eat the most turkey.
+TEXT8=
+TEXT9=3. Chris ate more turkey than the person who ate the slowest and ate faster than the person
+TEXT10=who ate the most turkey.
+VAR1=Name,Alex,Blake,Chris
+VAR2=Quantity,Least,Just right,Most
+VAR3=Finish Order,1st,2nd,3rd
+CONNECTWORD1=Name,ate,idn't eat,Quantity
+CONNECTWORD2=Name,finished,didn't finish,Finish Order
+CONNECTWORD3=Quantity,was eaten by,wasn;t eaten by,Name
+CONNECTWORD4=Quantity, finished ,didn't finish,Finish Order
+CONNECTWORD5=Finish Order, was,wasn't,Name
+CONNECTWORD6=Finish Order, was , wasn't ,Quantity
+CONNECTWORD7=,,,
+[USER]

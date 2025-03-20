@@ -1,0 +1,17 @@
+[Params]
+Colcount=3
+Rowcount=3
+MinLetters=6
+MaxLetters=10
+SolutionType=0
+Revisits=1
+[Data]
+Row 1=PHR
+Row 2=SAM
+Row 3=NID
+[TargetWords]
+Count=0
+[Intro]
+Text=Start on a letter and move horizontally, vertically, or diagonally from letter to adjacent letter to spell out a two-word famous fighting force.  You may return to a letter and reuse it.  All the letters will be used at least once. (Mensa Puzzle Calendar 11/21/15)
+
+

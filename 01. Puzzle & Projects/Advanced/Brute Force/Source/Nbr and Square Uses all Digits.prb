@@ -1,0 +1,15 @@
+Title
+Nbr and Square Uses all Digits
+Description
+Form a number and its square using each of the digits 1-9     
+exactly   once.  Hint: start with  a 3-digit number.    ( i.e    
+abc*abc=defghi)
+Numbers
+1,2,3,4,5,6,7,8,9
+Equations
+;  Original version 
+; (100*a+10*b+c)*(100*a+10*b+c)=100000*d+10000*e+1000*f+100*g+10*h+i
+; Replacement after muti-digit integer recognition added
+abc*abc=defghi
+SingleCharacterVariables?
+1

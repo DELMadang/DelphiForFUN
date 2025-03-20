@@ -1,0 +1,1 @@
+Find a six-digit number in which the first digit is one less than the second, the second digit is one less than the third, the fourth is one less than the fifth, and the fifth digit is one less than the last.  The second digit equals the sum of the last three digits, and the third digit equals the sum of the second and the fourth.  

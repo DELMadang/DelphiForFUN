@@ -1,0 +1,1 @@
+Find a six-digit number in which the first digit is one more than the second, the second digit is one more than the third, the third digit is one more than the fourth, the fourth is one more than the fifth, and the fifth digit is one more than the sixth.  The sum of the fifth and sixth digits equals the first.  

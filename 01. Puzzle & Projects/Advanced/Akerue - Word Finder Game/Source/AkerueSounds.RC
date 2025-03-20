@@ -1,0 +1,3 @@
+OKSound WAVE  "OK.wav"
+InvalidSound WAVE  "Invalid.wav"
+AddWordSound WAVE "Addword.wav" 

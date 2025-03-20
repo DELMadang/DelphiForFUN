@@ -1,0 +1,47 @@
+[DESCRIPTION]
+SOURCE1=PennyPress Original Logic Problems, 1988 (p. 6)
+TEXT1=KNIGHT SCHOOL
+TEXT2=
+TEXT3=In the Middle Ages, aspiring knights generally underwent years of arduous
+TEXT4=apprenticeship.  In one legend, Master Stewart and four of his friends aspired to become
+TEXT5=knights of the  Rotund table.  Each wanted extra help in a different field and attended
+TEXT6=classes at Camelot  Knight School.  Each took a different class held on a different
+TEXT7=weeknight; one studied the  art  of jousting.  What was each one's class and on what
+TEXT8=weeknight was it held?
+TEXT9=
+TEXT10=1. The one who studied maiden rescue was not Master Noble, whose class was on
+TEXT11=Monday.
+TEXT12=
+TEXT13=2. Master  Victor's class was held the day before the crusading class.
+TEXT14=
+TEXT15=3. The besieging class occurred later in the week than master Valor's, which was on a
+TEXT16=Tuesday.
+TEXT17=
+TEXT18=4. The serenading class met on Thursdays.
+TEXT19=
+TEXT20=5. Master Gallant's class was held on Wednesdays.
+VAR1=Names,Valor,Gallant,Noble,Victor,Stalwart
+VAR2=Classes,jousting,besieging,serenading,crusading,maiden rescue
+VAR3=Days,Mon,Tues,Wed,Thurs,Fri
+CONNECTWORD1=Names, is taking,isn't taking,Classes
+CONNECTWORD2=Names,has class on,no class on,Days
+CONNECTWORD3=Classes,taken by,not taken by,Names
+CONNECTWORD4=Classes,held on ,not held on,Days
+CONNECTWORD5=Days,is day for,not day for,Names
+CONNECTWORD6=Days,is day for,not day for,Classes
+CONNECTWORD7=,,,
+
+[ORIG]
+STMT1=1,Noble,maiden rescue,False
+STMT2=1,Noble,Mon,True
+STMT3=2,Valor,crusading,False
+STMT4=3,Valor,Tues,True
+STMT5=3,Valor,besieging,False
+STMT6=4,serenading,Thurs,True
+STMT7=5,Gallant,Wed,True
+SEP1=OR1,3,Valor,Before,crusading,Days,1,T
+SEP2=OR2,4,Victor,Before,besieging,Days,Unknown,T
+
+[USER]
+STMT1= 1,maiden rescue,Noble,False,X
+STMT2= 1,Noble,Mon,True,X

@@ -1,0 +1,15 @@
+Title
+Mensa Calendar 5/14/06
+Description
+Replace each letter with a digit to make the math correct 
+        
+         ABCDEFGI
+         x               I
+       --------------------    
+         AAAAAAAAA
+Numbers
+1,2,3,4,5,6,7,8,9
+Equations
+ABCDEFGI*I=AAAAAAAAA
+SingleCharacterVariables?
+1

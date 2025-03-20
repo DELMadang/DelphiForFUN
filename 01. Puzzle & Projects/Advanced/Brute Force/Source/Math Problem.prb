@@ -1,0 +1,20 @@
+Title
+Math Problem
+Description
+Complete the subtraction, replacing 
+the asteriaks with  digits so the 
+numbers from 1 to   9 only appear 
+once each.  ( Brain Game Daily 
+Calendar, Feb 28, 2013)        
+   
+           9** - *4* = **1        
+      
+Numbers
+2,3,5,6,7,8
+Equations
+900 + 10*A + B - (100*C+40 + D) = 100*E + 10*F + 1
+ 
+SingleCharacterVariables?
+0
+DuplicateVarValuesOK?
+0

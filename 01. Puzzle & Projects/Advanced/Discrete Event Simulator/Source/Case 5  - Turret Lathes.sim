@@ -1,0 +1,115 @@
+[Class A]
+Class=A
+Classname=Government jobs
+QDist=Exponential
+MeanInterArrivalTime=0.333
+GiveUpCost=0
+JobProfit=0
+WaitCostRate=500
+MaxWait=9999
+
+[Class B]
+Class=B
+Classname=Commercial jobs
+QDist=Exponential
+MeanInterArrivalTime=0.5
+GiveUpCost=0
+JobProfit=0
+WaitCostRate=300
+MaxWait=9999
+
+[Class C]
+Class=C
+Classname=Standard jobs
+QDist=Exponential
+MeanInterArrivalTime=1
+GiveUpCost=0
+JobProfit=0
+WaitCostRate=100
+MaxWait=9999
+
+[Server  1A]
+ServerNbr=1
+ServerName=Lathe #1
+Class=A
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[Server  1B]
+ServerNbr=1
+ServerName=Lathe #1
+Class=B
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[Server  1C]
+ServerNbr=1
+ServerName=Lathe #1
+Class=C
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[Server  2A]
+ServerNbr=2
+ServerName=Lathe #2
+Class=A
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[Server  2B]
+ServerNbr=2
+ServerName=Lathe #2
+Class=B
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[Server  2C]
+ServerNbr=2
+ServerName=Lathe #2
+Class=C
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[Server  3A]
+ServerNbr=3
+ServerName=Lathe #3
+Class=A
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[Server  3B]
+ServerNbr=3
+ServerName=Lathe #3
+Class=B
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[Server  3C]
+ServerNbr=3
+ServerName=Lathe #3
+Class=C
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.5
+CostRate=200
+
+[General]
+Description=The plant currently runs 3 turret lathes.  Everyone agrees that at least one more is needed , but the lathe department foremen wants two additional.  The department receives three types of jobs  - an average of 15 Government jobs per week, 10 Commercial jobs, and 5 Standard jobs.  All arrivals are Poisson distributed.   (The normal week has five  8-hour work days.)  Job waiting costs are $500/day, $300.day, and $100/day respectively for Government, Commercial, and Standard jobs.  For this reason each lathe operator is instructed to process Government jobs before Commercial jobs and Commercial jobs before Standard jobs.   The amortized cost of additional lathes is $200/day.  Job processing time for all job type averages 4 hours, distributed exponentially.  How many lathes should the company add to minimize costs?
+RunTime=20
+Timeunits=1

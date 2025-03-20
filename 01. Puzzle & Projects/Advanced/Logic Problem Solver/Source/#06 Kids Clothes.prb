@@ -1,0 +1,63 @@
+
+
+
+[DESCRIPTION]
+SOURCE1=PennyPress Original Logic Problems - Winter 1988
+TEXT1=KIDS' CLOTHES
+TEXT2=
+TEXT3=Time and again you buy a young child a new item of clothing and it seems that the child
+TEXT4=outgrows it overnight.  recently Mrs. Evans and four other mothers went out to buy
+TEXT5=clothing for their children.  Each used a different method of payment and each has a
+TEXT6=different number of chldren (from two to six).  What item of clothing did each mother buy
+TEXT7=(one bought raincoats), which method of payment did she use (one paid by check) and
+TEXT8=how many children does each have?
+TEXT9=
+TEXT10=1. Mrs. Anderson bought boots.  She has more children than the the mother (not Mrs.
+TEXT11=counts) who used her bank credit card  to buy shirts.
+TEXT12=
+TEXT13=2. Mrs. Baily (who didn't buy raincoats) has more children than Mrs. Dover, who isn't the
+TEXT14=mother of two.
+TEXT15=
+TEXT16=3. The mother who bought raincoats with cash has more children than the one who paid
+TEXT17=by check, but fewer children than Mrs. Counts.
+TEXT18=
+TEXT19=4. The woman who used the store credit card did not buy boots and has more children
+TEXT20=than the mother who bought jeans.
+TEXT21=
+TEXT22=5. The mother who used a gift certiicate has one more hild than the one who bought
+TEXT23=sweaters.
+VAR1=Names,Anderson,Baily,Counts,Dover,Evans
+VAR2=Items,Boots,Shirts,Raincoats,Jeans,Sweaters
+VAR3=Pymt Method,check,cash,bank card,store card,gift certificate
+VAR4=Nbr Kids,2,3,4,5,6
+CONNECTWORD1=Names,bought,didn't buy,Items
+CONNECTWORD2=Names,paid with,didn't pay with,Pymt Method
+CONNECTWORD3=Names,has     ,doesn't have,Nbr Kids
+CONNECTWORD4=Items,bought by,not bought by,Names
+CONNECTWORD5=Items,bought with,not bought with,Pymt Method
+CONNECTWORD6=Items,bought by mother with,not bought by mother with,Nbr Kids
+CONNECTWORD7=Pymt Method,used by,not usd by,Names
+CONNECTWORD8=Pymt Method,used for,not used for,Items
+CONNECTWORD9=Pymt Method,used for,not used for,Nbr Kids
+CONNECTWORD10=Nbr Kids,belongs to,doesnl;t belong to,Names
+CONNECTWORD11=Nbr Kids,has,doesn;t have,Items
+CONNECTWORD12=Nbr Kids,paid with,not paid with,Pymt Method
+CONNECTWORD13=,,,
+[ORIG]
+STMT1=,Anderson,Boots,True,X
+STMT2=,Shirts,bank card,True,X
+STMT3=,Counts,Shirts,False,X
+STMT4=,Anderson,bank card,False,X
+STMT5=,Baily,Raincoats,False,X
+STMT6=,Dover,2,False,X
+STMT7=,Raincoats,cash,True,X
+STMT8=,store card,Boots,False,X
+STMT9=,Counts,check,False,X
+STMT10=,Counts,Raincoats,False,X
+SEP1=OR1,,Anderson,After,bank card,Nbr Kids,Unknown,T,X
+SEP2=OR2,,Baily,After,Dover,Nbr Kids,Unknown,T,X
+SEP3=OR3,,Raincoats,After,check,Nbr Kids,Unknown,T,X
+SEP4=OR4,,Raincoats,Before,Counts,Nbr Kids,Unknown,T,X
+SEP5=OR5,,store card,After,Jeans,Nbr Kids,Unknown,T,X
+SEP6=OR6,,gift certificate,After,Sweaters,Nbr Kids,1,T,X
+SEP7=OR7,,Anderson,After,Shirts,Nbr Kids,Unknown,T,X

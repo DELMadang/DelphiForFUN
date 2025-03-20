@@ -1,0 +1,23 @@
+Title
+Digit tree
+Description
+Place all digits 1-9 in the circles.  Each circle must = sum of 
+   the  numbers  in the circles connected to it from below.    
+ Since there are 7 circles and 9 digits, I assumed that there 
+  would be  two 2-digit numbers and that they are located 
+as   shown here.   Each circle value will be larger than is   
+connected parts, so the top circle will be a two digit  
+number.    Adapted from "The Giant Book of Mensa Mind 
+Challenges"    (Stirling Publications, 2003)   
+Numbers
+1,2,3,4,5,6,7,8,9
+Equations
+f+g+h=10*c+d
+h+i=e
+10*c+d+e=10*a+b
+Imagefile
+Digit tree.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

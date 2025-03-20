@@ -1,0 +1,17 @@
+Title
+Mensa Puzzle from 4-15-06 Calendar
+Description
+There are fours sets of three-digit numbers (no digits the   
+same) that add up to 459.  One is shown below.  Can you find 
+ the other three?  (Reversing the two numbers does not count 
+as a new solution.)  
+
+  176 +283 =  459
+Numbers
+1,2,3,,6,7,8
+Equations
+100*a+10*b+c+100*d+10*e+f=459
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

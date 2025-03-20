@@ -1,0 +1,13 @@
+[Expression1]
+ExpressionText=x=2*sin(i);  y=2*cos(i)
+MinV=0
+MaxV=360
+NbrPoints=360
+AnglesInDegrees=1
+
+[Expression2]
+ExpressionText=
+MinV=0
+MaxV=0
+NbrPoints=0
+AnglesInDegrees=0

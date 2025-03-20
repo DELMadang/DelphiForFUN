@@ -1,0 +1,17 @@
+Title
+Two Equal Sets
+Description
+Divide the numbers 1-16 into 2 pilesof eight so that their sums 
+are   equal   Probably not solvable by brute force methods if 
+the equation is  written as sum(8 digits)=sum(8digits).  But if 
+we take advantage of  the fact that  sum for each pile must = 
+1/2 of  sum(1..16)
+Numbers
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Equations
+; Next equation cannot be solved by brute force
+;a+b+c+d+e+f+g+h=i+j+k+l+m+n+o+p
+;This equation will solve the problem successfully
+a+b+c+d+e+f+g+h=68
+SingleCharacterVariables?
+1

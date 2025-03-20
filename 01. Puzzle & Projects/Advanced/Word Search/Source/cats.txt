@@ -1,0 +1,46 @@
+[Params]
+Colcount=13
+Rowcount=13
+MinLetters=4
+MaxLetters=9
+SolutionType=1
+Revisits=0
+[Data]
+Row 1=TTUWWHISKERSS
+Row 2=SOATKKSYEKTSE
+Row 3=CCTIHIHPLLWTI
+Row 4=RHIILTTIEAYER
+Row 5=AXSTLPMTLELTP
+Row 6=TSOAAUWCECLER
+Row 7=CPEBBRAORNRSY
+Row 8=HTHBRRROETSOA
+Row 9=SOYAIEUEXMHHP
+Row10=WHRLACTECNUOP
+Row11=AARAHEITDOOFI
+Row12=PEUHWMOAIOKYS
+Row13=RWFSAGILELKIP
+
+[TargetWords]
+Count=19
+WORD 1=AGILE
+Word 2=CLAWS
+Word 3=CROUCH
+Word 4=FOOD
+Word 5=FURRY
+Word 6=HAIRBALL
+Word 7=HISS
+Word 8=KITTENS
+Word 9=LITTERBOX
+Word10=MEOW
+Word11=MILK
+Word12=PAWS
+Word13=POUNCE
+Word14=PURR
+Word15=SCRATCH
+Word16=SLEEP
+Word17=STEALTHY
+Word18=TAIL
+Word18=WHISKERS
+Word19=WHISKER
+[Intro]
+Text=Find the 19 words in the target word list below.  Words appear in a straight path running horizontally, vertically, or diagonally in either direction.

@@ -1,0 +1,24 @@
+Title
+4X4 Magic Square
+Description
+A Magic Square is a square arrangement of digits from1     
+through NxN   with the property that the numbers in each row, 
+  column and  each  of the 2 major diagonals sum to the same 
+  value.      Write the equations for and solve a 4X4 Magic  
+Square.  Hint:  the  sum of each row and column must be 1/4  
+of the sum of  the integers  from 1 to  16.   Why? 
+Numbers
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Equations
+a+b+c+d=34
+e+f+g+h=34
+i+j+k+l=34
+m+n+o+p=34
+a+e+i+m=34
+b+f+j+n=34
+c+g+k+o=34
+d+h+l+p=34
+a+f+k+p=34
+d+g+j+m=34
+SingleCharacterVariables?
+1

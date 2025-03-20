@@ -1,0 +1,53 @@
+Add-in Express Registrator Log File: 05/09/2015 15:14:44
+
+Installation directory: C:\Program Files\WinZip\
+Registrator version: 7.2.4055.0
+Operating System: Microsoft Windows 7 Professional Service Pack 1 (build 7601), 64-bit
+Process Owner: Administrator
+Command Line: "C:\Program Files\WinZip\adxregistrator.exe" /install="C:\Program Files\WinZip\WinZipExpressForOffice.dll" /privileges=admin
+Run 'As Administrator': Yes
+Process Elevated: Yes
+Integrity Level: High
+UAC (User Account Control): On
+--------------------------------------------------------------
+15:14:44 0192 Starting the add-in registration process.
+15:14:44 0192 Loading mscoree.dll
+15:14:44 0192 Success.
+15:14:44 0192 .NET Framework installation directory: 
+15:14:44 0192 The latest version of .NET Framework: 'v4.0.30319'
+15:14:44 0192 Loading CLR: v4.0.30319.
+15:14:44 0192 Calling CLRCreateInstance method.
+15:14:44 0192 Success.
+15:14:44 0192 Calling GetRuntime method.
+15:14:44 0192 Success.
+15:14:44 0192 Checking if the hosting API of .NET Framework v4.0 beta is installed.
+15:14:44 0192 The hosting API is up to date.
+15:14:44 0192 Calling GetInterface method for the CorRuntimeHost interface.
+15:14:44 0192 Success.
+15:14:44 0192 Starting CLR...
+15:14:44 0192 Success.
+15:14:44 0192 Getting the CLR version.
+15:14:44 0192 The CLR v4.0.30319 has been initialized successfully.
+15:14:44 0192 Creating a new domain setup.
+15:14:44 0192 Success.
+15:14:44 0192 The 'shadow copy' is disabled.
+15:14:44 0192 Creating a new application domain.
+15:14:44 0192 Success.
+15:14:44 0192 Getting the base directory for the domain.
+15:14:44 0192 Success. The directory is 'C:\Program Files\WinZip\'.
+15:14:44 0192 Searching for the Add-in Express core library.
+15:14:44 0192 Success. The 'AddinExpress.MSO.2005.dll' file is found.
+15:14:44 0192 Creating an instance of the 'AddinExpress.Deployment.ADXRegistrator' class.
+15:14:44 0192 Assembly identity is 'AddinExpress.MSO.2005'.
+15:14:44 0192 Success.
+15:14:44 0192 Unwrapping the instance of the 'AddinExpress.Deployment.ADXRegistrator' class.
+15:14:44 0192 Success.
+15:14:44 0192 Calling the managed registration procedure.
+15:14:44 0636 Connecting to the application domain of the Add-in Express loader.
+15:14:44 0636 Success.
+15:14:44 0636 Loading the 'winzipexpressforoffice.dll' assembly.
+15:14:44 0636 Success.
+15:14:44 0636 Registering the 'winzipexpressforoffice.dll' assembly (administrator).
+15:14:44 0636 The ' winzipexpressforoffice.dll' assembly has been registered successfully.
+15:14:44 0192 Success.
+15:14:44 0192 The add-in registration process is completed with HRESULT = 0.

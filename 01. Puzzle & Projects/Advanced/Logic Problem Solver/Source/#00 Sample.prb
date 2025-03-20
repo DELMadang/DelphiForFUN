@@ -1,0 +1,26 @@
+
+[ORIG]
+STMT1=1,13,blonde hair,True
+STMT2=3,John,red hair,False
+STMT3=3,Pete,blonde hair,False
+SEP1=OR1,2,John,After,Pete,Age,Unknown,T
+[DESCRIPTION]
+TEXT1=Mary, John and Pete have red, brown, and blonde hair, and are 13, 14, and 15 years old 
+TEXT2=.
+TEXT3=Using the following clues determine the hair color, and age of each child.
+TEXT4=
+TEXT5=1. The youngest has blonde hair.
+TEXT6= 
+TEXT7=2. John is older than Pete.
+TEXT8= 
+TEXT9=3. John does not have red hair and Pete does not have blonde hair.
+VAR1=Child,Pete,Mary,John
+VAR2=Hair,red hair,brown hair,blonde hair
+VAR3=Age,13,14,15
+CONNECTWORD1=Child,has,doesn't have,Hair
+CONNECTWORD2=Child,    is      ,    isn't    ,Age
+CONNECTWORD3=Hair,belongs to,doesn't belong to,Child
+CONNECTWORD4=Hair,belongs to,doesn't belong to,Age
+CONNECTWORD5=Age,is age of,isn't age of,Child
+CONNECTWORD6=Age,year old has,year old doesn't have,Hair
+CONNECTWORD7=,,,

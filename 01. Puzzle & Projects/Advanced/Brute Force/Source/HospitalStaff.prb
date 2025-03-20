@@ -1,0 +1,22 @@
+Title
+HospitalStaff
+Description
+The hospital staff consists of 16 doctors and nurses, including 
+  me.    The following facts apply to the staff memebers;  
+whether you include  me or not.    The staff consists of:
+ 1.More nurses then doctors. 
+ 2. More  male doctors than male nurses. 
+ 3. More male nurses then  female nurses. 
+ 4. At least one female doctor.    
+
+ What is the sex and occupation of the speaker? 
+Numbers
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+Equations
+DM+DF+NM+NF=16
+NM+NF>DM+DF
+NM>NF
+DM>NM
+DF>0
+SingleCharacterVariables?
+0

@@ -1,0 +1,23 @@
+[Class A]
+Class=A
+Classname=Machines
+QDist=Exponential
+MeanInterArrivalTime=1.25
+GiveUpCost=0
+JobProfit=0
+WaitCostRate=25
+MaxWait=9999
+
+[Server  1A]
+ServerNbr=1
+ServerName=Team A
+Class=A
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=0.667
+CostRate=25
+
+[General]
+Description=In a manufacturing firm, machines break down at the rate of 0.8 per hour, and the lost production cost of each machine waiting for service or repair is is estimated to be $25 per hour.  There are two repair teams available to the firm.  Team A asks for $25 oper hour and guarantees that it can repair 1.5 machines per hour.  Team B charges $20 per hour and can fix 1 machine per hour.  Which team should the firm employ?
+RunTime=1000
+Timeunits=2

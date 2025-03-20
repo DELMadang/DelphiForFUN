@@ -1,0 +1,24 @@
+Title
+Brothers and Sisters
+Description
+In a certain family, each boy child has twice as many sisters as 
+brothers.  Each girl child has the same number of sisters as 
+brothers.  How many children are there of each gender?
+
+(In the equations below, variables are assigns as follows:
+
+BB =  # of each Boy's bothers
+GB = # of each Girl's brothers
+BS = # of each Boy's sisters
+GS = # of each Girl's sisters 
+Numbers
+1,2,3,4,5
+Equations
+BB=GB-1
+GS=BS-1
+BS=2*BB
+GS=GB
+SingleCharacterVariables?
+0
+DuplicateVarValuesOK?
+1

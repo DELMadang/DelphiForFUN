@@ -1,0 +1,20 @@
+#  Seems like a Font.Name extract
+#. Form1..Font.Name
+#: U_Translations.dfm:12
+#. Form1..StaticText1..Font.Name
+#: U_Translations.dfm:31
+#. Form1..Panel1..Label1..Font.Name
+#: U_Translations.dfm:55
+#. Form1..Panel1..Label2..Font.Name
+#: U_Translations.dfm:69
+#. Form1..Panel1..Label4..Font.Name
+#: U_Translations.dfm:82
+#. Form1..Panel1..ChangeBtn..Font.Name
+#: U_Translations.dfm:95
+#. Form1..Panel1..LanguageGrp..Font.Name
+#: U_Translations.dfm:110
+#. Form1..Panel1..Memo1..Font.Name
+#: U_Translations.dfm:131
+msgid "Arial"
+msgstr ""
+

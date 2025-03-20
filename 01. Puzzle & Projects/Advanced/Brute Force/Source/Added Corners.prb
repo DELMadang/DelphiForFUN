@@ -1,0 +1,23 @@
+Title
+Added Corners
+Description
+Enter the digits 1 through 8 (one digit of each value) into 
+the      circles and squares at right so that sum of the digits 
+in any    two circles appears in the square that lies 
+between them.      Equations below assume that the 
+figures are assigned letters    "a" though "h" as shown.  
+Adapted from "The Giant Book of  Mensa Mind Challenges", 
+ Stirling Publications, 2003 
+Numbers
+1,2,3,4,5,6,7,8
+Equations
+a+c=b
+c+e=d
+e+g=f
+g+a=h
+Imagefile
+Added Corners.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

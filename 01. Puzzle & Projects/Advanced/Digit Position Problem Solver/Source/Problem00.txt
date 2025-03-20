@@ -1,0 +1,1 @@
+Find a five-digit number in which the first digit is double the second, the third digit is two less than the second, the fourth digit is the sum of the second and third, and the last digit is one less than the first.  The sum of all the digits is 19.

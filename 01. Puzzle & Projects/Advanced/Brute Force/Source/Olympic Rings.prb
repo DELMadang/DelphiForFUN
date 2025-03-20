@@ -1,0 +1,18 @@
+Title
+Olympic Rings
+Description
+The 5 overlapping Olympic rings form 9 distinct enclosed         
+regions.     Assign the digits 1-9 to these areas so that the    
+sum of the  numbers  in each circle equals 11.
+Numbers
+1,2,3,4,5,6,7,8,9
+Equations
+a+b=11
+b+c+d=11
+d+e+f=11
+f+g+h=11
+h+i=11
+Imagefile
+Olympic Rings.BMP
+SingleCharacterVariables?
+1

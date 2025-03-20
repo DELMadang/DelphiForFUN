@@ -1,0 +1,35 @@
+
+[ORIG]
+STMT1=1,Sam,1,False
+STMT2=1,Sam,6,False
+SEP1=OR1,2,Tim,After,Sam,Height,Unknown,T
+SEP2=OR2,3,Rob,After,Quint,Height,Unknown,T
+SEP3=OR3,3,Rob,After,Paul,Height,Unknown,T
+SEP4=OR4,4,Paul,Before,Quint,Height,Unknown,T
+SEP5=OR5,5,Sam,After,Rob,Height,Unknown,T
+SEP6=OR6,6,Joe,Before,Paul,Height,Unknown,T
+
+[DESCRIPTION]
+SOURCE1=????
+TEXT1= WHOSE TALLEST?
+TEXT2=
+TEXT3=
+TEXT4=The six boys lined up according to height.
+TEXT5=
+TEXT6=1. Sam was neither the tallest nor the shortest.
+TEXT7=2.Tim was taller than Sam.
+TEXT8=3. Rob was taller than Quint and Paul.
+TEXT9=4. Paul was shorter than Quint.
+TEXT10=5. Sam was taller than Rob.
+TEXT11=6. Joe was shorter than Paul.
+TEXT12=
+TEXT13=Who was the shortest?
+VAR1=Name,Sam,Tim,Rob,Quint,Paul,Joe
+VAR2=Height,1,2,3,4,5,6
+CONNECTWORD1=Name,    is      ,    isn't    ,Height
+CONNECTWORD2=Height,    is      ,    isn't    ,Name
+CONNECTWORD3=,,,
+
+[USER]
+
+

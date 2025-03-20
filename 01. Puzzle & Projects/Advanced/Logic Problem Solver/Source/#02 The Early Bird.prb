@@ -1,0 +1,42 @@
+[ORIG]
+STMT1=1,Rood,Beethoven,True
+STMT2=1,Morney,dance,True
+STMT3=1,Morney,4th,False
+STMT4=2,1st,carnivals,True
+STMT5=3,5th,Atlantis,True
+SEP1=OR1,1,Beethoven,Before,dance,Order,1,T
+SEP2=OR2,4,Conch,After,Dewitt,Order,1,T
+
+
+
+
+
+
+
+[DESCRIPTION]
+SOURCE1=Penny Press - Winter 1988 (p7)
+TEXT1=THE EARLY BIRD
+TEXT2= 
+TEXT3=By the time her neighbors arise, Mrs Byrd has already read "The Morning Sun", her
+TEXT4=daily newspaper.  Today, there are five different articles which particularly interested her.
+TEXT5=From the information given, determine each article's author (one is Professor Pound),
+TEXT6=subject (one is ecology), and the order in which Mrs. Bird read the articles.
+TEXT7= 
+TEXT8=1. Reverend Rood wrote the article on Beethoven.  Mrs. Bird read it right before she
+TEXT9=read the Mrs. Morney's article on dance, which was not the 4th article she read.
+TEXT10= 
+TEXT11=2. The first article read by Mrs. Byrd was about carnivals.
+TEXT12= 
+TEXT13=3. The fifth article that she read was on Atlantis.
+TEXT14= 
+TEXT15=4. She read Captain Conch's article immediately after Dr. Dewitt's.
+VAR1=Authors,Rood,Conch,Dewitt,Pound,Morney
+VAR2=Subjects,Beethoven,dance,carnivals,Atlantis,ecology
+VAR3=Order,1st,2nd,3rd,4th,5th
+CONNECTWORD1=Authors,is,isn't,Subjects
+CONNECTWORD2=Authors,is,isn't,Order
+CONNECTWORD3=Subjects,is,isn't,Authors
+CONNECTWORD4=Subjects,is,isn't,Order
+CONNECTWORD5=Order,is,isn't,Authors
+CONNECTWORD6=Order,is,isn't,Subjects
+CONNECTWORD7=,,,

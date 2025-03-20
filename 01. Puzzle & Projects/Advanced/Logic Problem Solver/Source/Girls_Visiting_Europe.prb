@@ -1,0 +1,27 @@
+
+[DESCRIPTION]
+SOURCE1=The Mensa(TM) Puzzle Calendar September 8, 2015
+TEXT1=Angie, Betty, and Cindy are college students taking their junior year abroad in Europe.  What is the
+TEXT2=order of the three women in in terns of most, second-most and fewest countries visited and in train rides
+TEXT3=taken in relation to each other based on the following statement?
+TEXT4=
+TEXT5=1. Angie has visited fewer countries than the person who has taken the fewest train rides.
+TEXT6=2. Betty has not take the most train rides.
+TEXT7=3. Cindy has taken more train rides the the person who has visited the most countries, and has not
+TEXT8=visited as many countries as the person who has taken the most train rides.
+VAR1=Student,Angie,Betty,Cindy
+VAR2=Countries,C1,C2,C3
+VAR3=Trains,T1,T2,T3
+CONNECTWORD1=Student, is , isn't ,Countries
+CONNECTWORD2=Student, is , isn't ,Trains
+CONNECTWORD3=Countries, is , isn't ,Student
+CONNECTWORD4=Countries, is , isn't ,Trains
+CONNECTWORD5=Trains, is , isn't ,Student
+CONNECTWORD6=Trains, is , isn't ,Countries
+CONNECTWORD7=,,,
+[ORIG]
+STMT1= 1,Angie,C3,False,X
+STMT2= 2,Betty,T3,False,X
+STMT3= 1,Angie,T1,False,X
+SEP1=OR1, 3,Cindy,After,C3,Trains,Unknown,T,X
+SEP2=OR2, 3,Cindy,Before,T3,Countries,Unknown,T,X

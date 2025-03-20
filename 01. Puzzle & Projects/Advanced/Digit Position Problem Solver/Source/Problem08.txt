@@ -1,0 +1,1 @@
+Find a five-digit number in which the second and fourth digits are the same, the third digit is the sum of the first and second, the fifth digit is the sum of the third and fourth, and the third digit is one more than the first, and one less than the fifth.  The sum of all the digits is 14. 

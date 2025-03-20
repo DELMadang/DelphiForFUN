@@ -1,0 +1,13 @@
+Title
+SEND+MORE=MONEY
+Description
+Solve the Alphametic "SEND+MORE=MONEY" where each   
+letter represents a unique digit.  No number begins with a 0.
+Numbers
+0,1,2,3,4,5,6,7,8,9
+Equations
+1000*s+100*e+10*n+d+1000*m+100*o+10*r+e=10000*m+1000*o+100*n+10*e+y
+s>0
+m>0
+SingleCharacterVariables?
+1

@@ -1,0 +1,1 @@
+Find a six-digit number in which the first digit is two less than the fifth, the second digit is one more than the fourth, and the fifth digit is four less than the last.  The sum of the first and fourth digits equals the second, the sum of the third and last digits equals the second, and the sum of all the digits is 30. 

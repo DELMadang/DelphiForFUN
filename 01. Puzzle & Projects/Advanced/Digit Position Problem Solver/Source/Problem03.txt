@@ -1,0 +1,1 @@
+Find a five-digit number in which the first digit equals the sum of the fourth and fifth digits, the second digit equals the sum of the first and third digits, the first digit is one less than the second, and the fourth digit is two more than the third.  The sum of all the digits is 23. 

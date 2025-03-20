@@ -1,0 +1,25 @@
+Title
+test5
+Description
+Test program to ensure that the 
+50 trial digit limit for trial digits,    
+
+Brute Force Version 3.4.1 increases 
+the maximum from 20 to 50.  Testing 
+digits 1 to 30 is sufficient. to cover the 
+solution digits (and finds them 
+considerably faster).     
+Numbers
+1-50
+Equations
+a+b+c+d=88
+a+b+c+e=84
+a+b+d+e=82
+a+c+d+e=78
+b+c+d+e=72
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0
+Divides must be exact?
+1

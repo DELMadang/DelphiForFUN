@@ -1,0 +1,53 @@
+[DESCRIPTION]
+SOURCE1=PennyPress - Original logic problems - Winter 1988 (p11)
+TEXT1= PUZZLES, PUZZLES, PUZZLES
+TEXT2=
+TEXT3=Stuart and his four friend share an interest in puzzles although each of the five subscribes
+TEXT4=to a diferent magazine and prefers a different kind of puzzle.  They all received their
+TEXT5=magazines yesterday.  One solved his first puzzle while on a train.  the other four all
+TEXT6=solved theirs in different locations.  From the information gien, determine which
+TEXT7=magazinbe each receiveds, the type of puzzle each solved first, and the location in which
+TEXT8=each solved his first puzzle.
+TEXT9=
+TEXT10=1.. Stuart solved his puzzle at home.
+TEXT11=
+TEXT12=2. The crossword puzzle was solved ona bus ride.  Adrienne does not ride the bus and
+TEXT13=did not buy "Brainbender".
+TEXT14=
+TEXT15=3. The puzzle "Mindboggler" was solved in the park at lunchtime and the Logic problem
+TEXT16=was solved ina cafeteria.
+TEXT17=
+TEXT18=4. Paul did the Wordseek puzzle.  The Numberframe puzzle was the first puzzle solved
+TEXT19=by the subscriber to "Head Teasers".
+TEXT20=
+TEXT21=5. Julia's anagram puzzle was in "Thinking Cap"
+VAR1=Person,Adrienne,Julia,Paul,Renee,Stuart
+VAR2=Magazine,Brainbender,Headteasers,Mindboggler,Puzzlepack,Thinkingcap
+VAR3=Puzzle,Anagram,Crossword,Logic,Number frame,Wordseek
+VAR4=Location,Bus,Cafeteria,Home,Park,Train
+CONNECTWORD1=Person,subscribes to,no subcription to,Magazine
+CONNECTWORD2=Person,solved,didn;t solve,Puzzle
+CONNECTWORD3=Person,solved at,didn't solve at,Location
+CONNECTWORD4=Magazine,subscribed by,not subscribed by,Person
+CONNECTWORD5=Magazine,subscriber solved,subscriber didn't solve,Puzzle
+CONNECTWORD6=Magazine,subscriber solved puzzle at,    isn't    ,Location
+CONNECTWORD7=Puzzle,solved by,not solved by,Person
+CONNECTWORD8=Puzzle,solved by subscriber to,not solved by subscriber to,Magazine
+CONNECTWORD9=Puzzle,solved at,not solved at,Location
+CONNECTWORD10=Location,used by,not used by,Person
+CONNECTWORD11=Location,    is      ,    isn't    ,Magazine
+CONNECTWORD12=Location,    is      ,    isn't    ,Puzzle
+CONNECTWORD13=,,,
+
+[ORIG]
+STMT1=1,Stuart,Home,True
+STMT2=2,Crossword,Bus,True
+STMT3=2,Adrienne,Bus,False
+STMT4=2,Adrienne,Brainbender,False
+STMT5=3,Mindboggler,Park,True
+STMT6=3,Logic,Cafeteria,True
+STMT7=4,Paul,Wordseek,True
+STMT8=4,Number frame,Headteasers,True
+STMT9=5,Julia,Anagram,True
+STMT10=5,Julia,Thinkingcap,True
+

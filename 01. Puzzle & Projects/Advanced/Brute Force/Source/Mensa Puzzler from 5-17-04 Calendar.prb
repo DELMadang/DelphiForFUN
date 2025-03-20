@@ -1,0 +1,22 @@
+Title
+Mensa Puzzle
+Description
+Find the six digit number in which the first digit is one less than 
+  the  second and one half the third, the fourth digit is one 
+more  than the  third and is also the sum of the first and 
+second, and  the the fifth and  six digits make a number which 
+is the sum of  the first four digits.    The  sum of all the digits is 
+19.
+Numbers
+0,1,2,3,4,5,6,7,8,9
+Equations
+a=b-1
+2*a=c
+d=C+1
+D=A+B
+10*E+F=A+B+C+D
+a+b+c+d+e+f=19
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+1

@@ -1,0 +1,14 @@
+Title
+expressions864
+Description
+Find all solutions where the sum of two numbers equals   864.  
+And by the way, the solution, including the "864" sum  must 
+contain each of the digits 1 through 9 exactly once.    
+Numbers
+1,2,3,5,7,9
+Equations
+; Original version 100*a+10*b+c+100*d+10*e+f=864
+;New version
+abc+def=864
+SingleCharacterVariables?
+1

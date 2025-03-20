@@ -1,0 +1,31 @@
+1 4 2
+PARTS
+	Length	# Required
+	 45.00	97
+	 36.00	610
+	 31.00	395
+	 14.00	211
+
+STOCK
+	Length	Cost
+	100.00	  1.00
+
+
+
+
+ --- Optimal Integer Solutuion ---
+	Pattern(1)  Stock length:    100.00  Needed: 49
+		Order length:  45.00  Number cut from each stock piece:     2
+		Unused from each stock piece 10.00
+	Pattern(2)  Stock length:    100.00  Needed: 100
+		Order length:  36.00  Number cut from each stock piece:     2
+		Unused from each stock piece 28.00
+	Pattern(3)  Stock length:    100.00  Needed: 198
+		Order length:  36.00  Number cut from each stock piece:     1
+		Order length:  31.00  Number cut from each stock piece:     2
+		Unused from each stock piece 2.00
+	Pattern(4)  Stock length:    100.00  Needed: 106
+		Order length:  36.00  Number cut from each stock piece:     2
+		Order length:  14.00  Number cut from each stock piece:     2
+		Unused from each stock piece 0.00
+Stock cost =     453.00

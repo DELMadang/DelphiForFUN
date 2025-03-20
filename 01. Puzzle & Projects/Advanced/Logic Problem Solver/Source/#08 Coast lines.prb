@@ -1,0 +1,56 @@
+[DESCRIPTION]
+SOURCE1=PennyPress Logic Problems - Winter 1988
+TEXT1=COAST LINES
+TEXT2=
+TEXT3=Emily had a wonderful one-week vacation in California..While away, she mailed several
+TEXT4=scenic post cards to her family and friends, each of whom live in a different borough of
+TEXT5=New York City.  Emily sent a postcard to a different borough each day.  In what borough
+TEXT6=of New York City does does each of the five friends and relatives live, what picture was
+TEXT7=on  the post card Emily sent to each, and on what day did Emily send each postcard?
+TEXT8=
+TEXT9=1. Emily sent the post card  of the waterfall on Friday, but not to her friend who lives on
+TEXT10=Staten Island.
+TEXT11=
+TEXT12=2. Emily's aunt got the post card of the mountains.  Emily's cousin lives in Queens.
+TEXT13=
+TEXT14=3. Emily sent a post card to her sister in Brooklyn the day before she mailed the post card
+TEXT15=of Yosimite National park.
+TEXT16=
+TEXT17=4. Emily sent the post card of the seashore to her grandfather, who does not live on
+TEXT18=Manhatten.  The card to Manhatten (posted on Monday) was not of Los Angeles.
+TEXT19=
+TEXT20=5. On Thursday Emily sent a post card to the Bronx.
+VAR1=From,LA,Mtns,Sea,Waterfall,Yosemite
+VAR2=To,Aunt,Cousin,Friend,Grandpa,Sister
+VAR3=Day,Mon,Tue,Wed,Thu,Fri
+VAR4=City,Bronx,Brooklyn,Manhattan,Queens,Staten Island
+CONNECTWORD1=From,sent to,not sent to,To
+CONNECTWORD2=From,sent on,not sent on,Day
+CONNECTWORD3=From,sent to,not sent to,City
+CONNECTWORD4=To,received from,not received from,From
+CONNECTWORD5=To,got card on,no card on ,Day
+CONNECTWORD6=To,line in,doesn't line in ,City
+CONNECTWORD7=Day,is card day from   ,wasn't card day from,From
+CONNECTWORD8=Day,is card day to,isn't card day to,To
+CONNECTWORD9=Day,is card day to,isn't card day to,City
+CONNECTWORD10=City,got card from,no card from ,From
+CONNECTWORD11=City,is home of,isn't home of    ,To
+CONNECTWORD12=City,got card on      , got no card on    ,Day
+CONNECTWORD13=,,,
+
+[ORIG]
+STMT1=1,Waterfall,Fri,True
+STMT2=1,Waterfall,Staten Island,False
+STMT3=1,Friend,Staten Island,True
+STMT4=2,Cousin,Queens,True
+STMT5=2,Mtns,Aunt,True
+STMT6=3,Brooklyn,Fri,False
+STMT7=3,Yosemite,Mon,False
+STMT8=3,Sister,Brooklyn,True
+STMT9=4,Mon,LA,False
+STMT10=4,Mon,Manhattan,True
+STMT11=4,Grandpa,Manhattan,False
+STMT12=4,Grandpa,Sea,True
+STMT13=5,Thu,Bronx,True
+SEP1=OR1,3,Brooklyn,Before,Yosemite,Day,1,T
+

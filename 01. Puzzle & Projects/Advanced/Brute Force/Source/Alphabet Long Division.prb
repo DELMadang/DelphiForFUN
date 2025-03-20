@@ -1,0 +1,25 @@
+Title
+Alphabet Long Division
+Description
+In this long-division problem, letters  
+replace numbers. Determine the  
+values of the letters and then arange  
+the letters in order from 0 to 9 to spell 
+ the name of a famous person.
+
+Source: Mensa Puzzle Calendaer for  
+May 28, 2014. 
+Numbers
+0-9
+Equations
+BRINK / RIB = RUN
+RIB * R = OAR
+BRI - OAR = OB
+OBN - RIB = RIT
+RIB * N = ROAC
+Imagefile
+Alphabet Long Division.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

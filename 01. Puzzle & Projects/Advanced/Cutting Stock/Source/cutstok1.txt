@@ -1,0 +1,13 @@
+3 3 2
+PARTS
+	Length	# Required
+	  2.00	20
+	  3.00	10
+	  4.00	20
+
+STOCK
+	Length	Cost
+	  9.00	 10.00
+	  6.00	  7.00
+	  5.00	  6.00
+

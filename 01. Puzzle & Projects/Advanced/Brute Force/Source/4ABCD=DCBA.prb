@@ -1,0 +1,16 @@
+Title
+4ABCD=DCBA
+Description
+Replace the letters with digits so 
+that the following equation is 
+satisfied.
+
+ABCD*4=DCBA 
+Numbers
+0-9
+Equations
+ABCD*4= DCBA
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+1

@@ -1,0 +1,23 @@
+Title
+Number relations Problem 2
+Description
+I'm a four-digit number with  
+ascending digits whose first two  
+digits have a difference of two.  My  
+third digit is even and the sum of my  
+first three digits equals my last digit.   
+What number am I?.  
+Numbers
+0,1,2,3,4,5,6,7,8,9
+Equations
+a>0
+a<b
+b<c
+c<d
+b-a=2
+a+b+c=d
+c=2*n
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+1

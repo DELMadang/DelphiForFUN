@@ -1,0 +1,37 @@
+Title
+Numbered Knights
+Description
+Nine Knights numbered 1 through 9   
+are seated at the Round Table in such 
+  a way that every knight's number is 
+at  least 3 higher or lower than its  
+adjacent neighbor.  Also, the two  
+knights at the end of the horizontal line 
+ sum to an even number.  With knights 
+ 2, 6, and 8 seated as shown, seat the 
+ rest of the knights,   
+
+Hint: Use Absolute Value, (abs) and  
+Modulo (mod) functions to define  
+constraints.  
+Numbers
+1,3,4,5,7,9
+Equations
+abs(a-6)>2
+abs(6-b)>2
+abs(b-8)>2
+abs(8-c)>2
+abs(c-2)>2
+abs(2-d)>2
+abs(d-e)>2
+abs(e-f)>2
+abs(f-a)>2
+(e+b) mod 2 =0
+Imagefile
+Mensa 08-18-15.jpg
+SingleCharacterVariables?
+0
+DuplicateVarValuesOK?
+0
+Divides must be exact?
+0

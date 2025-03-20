@@ -1,0 +1,23 @@
+Title
+Mensa 01-15-14
+Description
+Each letter A through H has one of 
+the eight values listed and no two 
+letters have the same value.  
+Determine which number goes with 
+each letter to make the equations 
+true.
+Source: Mensa Puzzle Calendar: 
+January 15, 2014
+Numbers
+1,2,3,4,5,7,9,12
+Equations
+D+H=G
+A+F=H
+C+D=E
+A+B=F
+F+G=E
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

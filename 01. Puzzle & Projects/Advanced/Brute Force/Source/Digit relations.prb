@@ -1,0 +1,23 @@
+Title
+Digit relations
+Description
+Fine the six-digit  number in which the 
+second digit is two less than the first, 
+the third is two less than the second, 
+and the fourth is two less than the 
+third,  The fourth is also the 
+difference when the third is 
+subtracted from the fifth. The sum of 
+all the digits is 38.
+Numbers
+0,1,2,3,4,5,6,7,8,9
+Equations
+b=a-2
+c=b-2
+d=c-2
+d=e-c
+a+b+c+d+e+f=38
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+1

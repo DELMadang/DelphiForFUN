@@ -1,0 +1,4 @@
+Find a five-digit number in which the first and last digits are the same, and the first digit is two less than the second and four less than the third.  The fourth digit is one-fourth of the third digit.  The sum of the first and last digits equals the third digit.
+
+//Note: This problem is not parsed correctly because of a unresolved problem.
+// The word "fourth" is used as both a "digit position" and a "fraction denominator".

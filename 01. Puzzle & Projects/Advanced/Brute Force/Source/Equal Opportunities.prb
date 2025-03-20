@@ -1,0 +1,26 @@
+Title
+Equal Opportunities
+Description
+Place each digit from 1 to 9 in the empty squares so that   
+the three rows across and the three columns down form   
+correct arithmetic statements.  All calculations involve only  
+ positive whole numbers and should be performed from left 
+  to right and top to bottom.
+
+Source Mensa Paga-A-Day Puzzle Calendar for February   
+12, 2009  
+Numbers
+1,2,3,4,5,6,7,8,9
+Equations
+(a+b)=8*c
+d*e+f=9
+(g-h)*i=6
+a+d-g=0
+b*e=6*h
+c+f-i=4
+Imagefile
+Equal Opportunities.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

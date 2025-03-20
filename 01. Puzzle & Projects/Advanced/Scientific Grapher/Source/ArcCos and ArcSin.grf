@@ -1,0 +1,15 @@
+[Expression1]
+ExpressionText=arccos(x)*180/pi
+MinV=-1
+MaxV=1
+NbrPoints=100
+AnglesInDegrees=0
+Title=ArcCos
+
+[Expression2]
+ExpressionText=arcsin(x)*180/pi
+MinV=-1
+MaxV=1
+NbrPoints=100
+AnglesInDegrees=0
+Title=ArcSin

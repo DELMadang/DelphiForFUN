@@ -1,0 +1,23 @@
+[Class A]
+Class=A
+Classname=Thirsty autos
+QDist=Exponential
+MeanInterArrivalTime=5
+GiveUpCost=8
+JobProfit=1
+WaitCostRate=0
+MaxWait=3
+
+[Server  1A]
+ServerNbr=1
+ServerName=Pump #1
+Class=A
+SelectionProtocol=0
+ProcessDist=Exponential
+MeanProcessTime=4
+CostRate=0.0167
+
+[General]
+Description=A gas station has a single pump with customers arriving every 5 minutes on average,  It takes an average of 4 minutes to fill up and pay.  The owner makes $1 per customer, but a customer will give up and leave after 3 mintues, costing the station $8 in future profits.   Each pump costs $1/hour in depreciation, electricity, overhead, etc.  Should the owner install a second pump?
+RunTime=1440
+Timeunits=3

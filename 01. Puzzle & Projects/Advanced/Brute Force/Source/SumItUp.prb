@@ -1,0 +1,22 @@
+Title
+SumItUp
+Description
+Enter a number in each squaew  to 
+arrive at the end totals.  Use  onlt the 
+number 1 through 8 and use  each 
+number only once.  
+Numbers
+1-8
+Equations
+B-A=5
+C-D+E=4
+F+G-H=3
+A+C+F=16
+D-G=4
+B-E+H=10
+Imagefile
+SumItUp.jpg
+SingleCharacterVariables?
+1
+DuplicateVarValuesOK?
+0

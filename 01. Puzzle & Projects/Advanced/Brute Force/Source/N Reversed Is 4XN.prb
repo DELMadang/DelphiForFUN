@@ -1,0 +1,14 @@
+Title
+Nbr X  4 = Nbr Reversed
+Description
+Find a five digit number with no repeated digits that reverses   
+itself   when multiplied by 4.
+Numbers
+0,1,2,3,4,5,6,7,8,9
+Equations
+; Original (10000*A+1000*b+100*C+10*D+E)*4=10000*E+1000*D+100*C+10*B+A
+; Replacement equation after multi-digit integer recognition added
+ABCDE*4=EDCBA
+
+SingleCharacterVariables?
+1
