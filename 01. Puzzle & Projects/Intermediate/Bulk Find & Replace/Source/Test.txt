@@ -1,0 +1,10 @@
+ tesT
+ first line
+ first line w/one tEsT
+ test Test
+ Test test
+ replace all w/case match test test test
+ TesttesttestTest
+ Replace all w/o case match Test test Test
+ last line
+

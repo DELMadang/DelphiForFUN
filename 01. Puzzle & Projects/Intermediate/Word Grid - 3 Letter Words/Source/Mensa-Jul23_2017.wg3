@@ -1,0 +1,10 @@
+[Params]
+Columns=2
+SolutionRow=1
+Foreign=0
+HideSolution=0
+Solution=INVOICE
+[Data]
+Row0=TOENAIL
+Row1=INVOICE
+Row2=NEEDLED

@@ -1,0 +1,355 @@
+<pre class="sourcecode"><code>
+<b>unit</b> U_wordladder;
+<font color="#003399"><i>{Copyright 2001, Gary Darby, Intellitech Systems Inc., www.DelphiForFun.org
+
+ This program may be used or modified for any non-commercial purpose
+ so long as this original notice remains in place.
+ All other rights are reserved
+ }</i></font>
+
+ <font color="#003399"><i>{Word Ladders transform one word to another one letter at a time with
+ each intermediate letter arrangement forming a valid word}</i></font>
+
+ <font color="#003399"><i>{This program is an auto-solver using the UDict component to extract
+  word lists for checking.  Both depth-first and breadth-first solution
+  searches are implemented}</i></font>
+
+<b>interface</b>
+
+<b>uses</b>
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, ComCtrls;
+
+<b>type</b>
+  TForm1 = <b>class</b>(TForm)
+    FromEdt: TEdit;
+    ToEdt: TEdit;
+    DFSolveBtn: TButton;
+    SolutionListBox: TListBox;
+    MaxWordsEdt: TEdit;
+    MaxLevel: TUpDown;
+    StepsLbl: TLabel;
+    BFSolveBtn: TButton;
+    ListBox2: TListBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    StopBtn: TButton;
+    <b>procedure</b> FormCreate(Sender: TObject);
+    <b>procedure</b> DFSolveBtnClick(Sender: TObject);
+    <b>procedure</b> BFSolveBtnClick(Sender: TObject);
+    <b>procedure</b> ListBox2Click(Sender: TObject);
+    <b>procedure</b> StopBtnClick(Sender: TObject);
+  <b>private</b>
+    <font color="#003399"><i>{ Private declarations }</i></font>
+  <b>public</b>
+    <font color="#003399"><i>{ Public declarations }</i></font>
+    target:<b>string</b>;
+    solving:boolean;
+    maxwords:integer;  <font color="#003399"><i>{max steps in solution}</i></font>
+    wordlist:Tstringlist;  <font color="#003399"><i>{list of all valid words of required length}</i></font>
+    <b>function</b> makeDFladder(w:<b>string</b>;prevpos:integer):boolean;
+    <b>function</b> makeBFLadder(w:<b>string</b>;prevpos:integer):boolean;
+    <b>Procedure</b> Solveit(Depthfirst:boolean);
+  <b>end</b>;
+
+<b>var</b>
+  Form1: TForm1;
+
+<b>implementation</b>
+
+<font color="#003399"><i>{$R *.DFM}</i></font>
+
+<b>Uses</b> UDict;
+
+<font color="#003399"><i>{local rotuines }</i></font>
+
+ <b>function</b> lettersdiff(w1,w2:<b>string</b>; <b>var</b> changed:integer):integer;
+ <font color="#003399"><i>{result = number of w1 letters not matching corresponding position of w2}</i></font>
+ <font color="#003399"><i>{changed = last position not matching}</i></font>
+      <b>var</b>
+        i:integer;
+      <b>begin</b>
+        result:=0;
+        <font color="#003399"><i>{changed:=0;}</i></font>
+        <b>for</b> i:= 1 <b>to</b> length(w1) <b>do</b>
+          <b>if</b> w1[i]&lt;&gt;w2[i] <b>then</b>
+          <b>begin</b>
+           inc(result);
+           <font color="#003399"><i>{if changed=0 then}</i></font> changed:=i;
+          <b>end</b>;
+      <b>end</b>;
+
+
+<font color="#003399"><i>{******************** TForm1.FormCreate **************}</i></font>
+<b>procedure</b> TForm1.FormCreate(Sender: TObject);
+<b>begin</b>
+  PubDic.loadlargedic;
+  wordlist:=TStringList.create;
+  StopBtn.bringtofront;  <font color="#003399"><i>{bring invisible stop button to front , over solve buttons}</i></font>
+<b>end</b>;
+
+
+<font color="#003399"><i>{******************  TForm1. MakeDFLadder *******************}</i></font>
+<b>function</b> TForm1.MakeDFLadder(w:<b>string</b>;prevpos:integer):boolean;
+<font color="#003399"><i>{Make depth first ladder}</i></font>
+<font color="#003399"><i>{make a list of all words matching input word in length with a single
+ letter changed}</i></font>
+<font color="#003399"><i>{ set score based on letters matching target word}</i></font>
+<font color="#003399"><i>{ sort list with most matches first}</i></font>
+<font color="#003399"><i>{process list -
+  get next word
+  if target word - done
+  otherwise add word to ladder and make recursive call
+  end of list - remove word &amp; exit
+ }</i></font>
+
+<b>var</b>
+  list:TStringlist;
+  i,n:integer;
+  newword:<b>string</b>;
+  changedpos, dummy:integer;
+<b>begin</b>
+  result:=false;
+  <b>if</b> length(w)=0 <b>then</b> exit;
+  <b>if</b> SolutionListBox.items.count&gt;=MaxLevel.position <b>then</b> exit;
+  list:=Tstringlist.create;
+  list.sorted:=true;
+  SolutionListBox.items.add(w);
+  newword:=lowercase(w);
+  application.processmessages;
+  <b>for</b> i:= 0 <b>to</b> wordlist.count-1 <b>do</b>
+  <b>begin</b>
+    newword:=wordlist[i];
+    <b>if</b> (length(newword)&gt;0) <b>then</b>
+    <b>begin</b>
+      <b>if</b> (lettersdiff(w,newword,changedpos)=1 ) <font color="#003399"><i>{differs in one postion}</i></font>
+        <b>and</b> (changedpos&lt;&gt;prevpos) <font color="#003399"><i>{don't change same position twice in a row}</i></font>
+        <b>and</b> (SolutionListBox.items.indexof(newword)&lt;0) <font color="#003399"><i>{not used yet}</i></font>
+      <b>then</b>
+      <b>begin</b>
+        n:=lettersdiff(newword,target,dummy);
+        <b>if</b> n=1 <b>then</b> <font color="#003399"><i>{hey - it's a solution!, Might as well stop here}</i></font>
+        <b>begin</b>
+          result:=true;
+          SolutionListbox.items.add(newword);
+          list.free;
+          exit;
+        <b>end</b>
+        <b>else</b> list.add(format(<font color="#9933CC">'%2d%2d'</font>,
+                       [n, changedpos])
+                       +newword);
+      <b>end</b>;
+    <b>end</b>;
+  <b>end</b>;
+  i:=0;
+  <b>while</b> (tag=0) <b>and</b> (result=false) <b>and</b> (i&lt;=list.count-1)<b>do</b>
+  <b>begin</b>
+    changedpos:=strtoint(copy(list[i],3,2));
+    newword:=copy(list[i],5,length(list[i])-4);
+    result:=makeDFLadder(newword,changedpos);
+    inc(i);
+  <b>end</b>;
+  <b>if</b> <b>not</b> result <b>then</b> SolutionListBox.items.delete(SolutionListBox.items.count-1);
+  list.free;  <font color="#003399"><i>{delete temp list}</i></font>
+<b>end</b>;
+
+
+
+
+<font color="#003399"><i>{******************** TForm1.MakeBFLadder *********************}</i></font>
+<b>function</b> TForm1.makeBFLadder(w:<b>string</b>;prevpos:integer):boolean;
+<font color="#003399"><i>{Breadth first search}</i></font>
+ <font color="#003399"><i>{Initially - }</i></font>
+ <font color="#003399"><i>{make a list of all words matching input word in length with a single
+ letter changed, each list entry has an associated object containing the
+ chain of words that got us to that word (just used to display the answer)}</i></font>
+<font color="#003399"><i>{set score based on letters matching target word}</i></font>
+<font color="#003399"><i>{sort list with best matches first}</i></font>
+<font color="#003399"><i>{process list -
+  get next word
+  if target word - done
+  otherwise add word to nextlevel list and add the current word to its
+    prevwords list
+  at end of list - assign nextlevel list to current level list and
+  start search again }</i></font>
+
+<b>var</b>
+  CurrentLevelList:TStringlist;
+  NextLevelList:TStringList;
+  i,j:integer;
+  newword, currword, ww, msg:<b>string</b>;
+  n, changedpos, dummy, level:integer;
+  currlist, nextlist:TStringList;
+<b>begin</b>
+  result:=false;
+  SolutionListBox.clear;
+  <b>if</b> length(w)=0 <b>then</b> exit;
+  CurrentLevelList:=Tstringlist.create;
+  Nextlevellist:=TStringList.create;
+  nextlevellist.sorted:=true;
+  nextlevellist.duplicates:=dupignore;
+  newword:=<font color="#9933CC">'00'</font>+uppercase(w); <font color="#003399"><i>{make the initial list}</i></font>
+  currentlevellist.addobject(newword,TStringlist.create);
+  level:=0;
+  <b>while</b>   (result=false) <b>and</b> (tag=0) <b>and</b> (currentlevellist.count&gt;0)
+      <b>and</b> (level&lt;maxlevel.position) <b>do</b>
+  <b>begin</b>
+    inc(level);
+    <b>if</b> currentlevellist.count&gt;1 <b>then</b> msg:=<font color="#9933CC">' words '</font> <b>else</b> msg:=<font color="#9933CC">' word '</font>;
+    SolutionListBox.items.add(<font color="#9933CC">'Checking '</font>+inttostr(currentlevellist.count)+ msg);
+    SolutionListBox.items.add(<font color="#9933CC">'   at level '</font>+inttostr(level));
+    application.processmessages;
+    <b>for</b> i:= 0 <b>to</b> currentlevellist.count-1 <b>do</b>
+    <b>begin</b>
+      currword:=copy(currentlevellist[i],3,length(currentlevellist[i])-2);
+      currlist:=TStringlist(currentlevellist.objects[i]);
+      currlist.add(currword);
+      <b>for</b> j:= 0 <b>to</b> wordlist.count-1 <b>do</b>
+      <b>begin</b>
+        newword:=wordlist[j];
+        <b>if</b> (lettersdiff(currword,newword,ChangedPos)=1 ) <font color="#003399"><i>{differs in one postion}</i></font>
+        <b>then</b>
+        <b>begin</b>
+          n:=lettersdiff(newword,target,dummy);
+          <b>if</b> n&lt;=1 <b>then</b>   <font color="#003399"><i>{solution!}</i></font>
+          <b>with</b> SolutionListBox.items <b>do</b>
+          <b>begin</b>
+            <font color="#003399"><i>{this word will produce a solution - we might as well call it solved
+             now and saved detecting the solution when next level becomes current}</i></font>
+            result:=true;
+            assign(currlist); <font color="#003399"><i>{put solution in listbox}</i></font>
+            add(newword);     <font color="#003399"><i>{add this word}</i></font>
+            break;
+          <b>end</b>
+          <b>else</b>
+          <b>begin</b>
+            ww:=format(<font color="#9933CC">'%2d'</font>, [n])+newword;
+            <b>if</b>    (currlist.indexof(newword)&lt;0) <font color="#003399"><i>{not a predecessor}</i></font>
+              <b>and</b> (currentlevellist.indexof(ww)&lt;0) <font color="#003399"><i>{not used yet at currentlevel}</i></font>
+            <b>then</b>
+            <b>begin</b>
+               nextlist:=TStringlist.create;
+               nextlist.assign(currlist);
+               NextLevelList.addobject(ww,nextlist);
+            <b>end</b>;
+          <b>end</b>;
+        <b>end</b>;
+      <b>end</b>;
+      application.processmessages;
+      <b>if</b> result <b>or</b> (tag&lt;&gt;0) <b>then</b> break;
+    <b>end</b>;
+    <b>if</b> <b>not</b> result <b>then</b>
+    <b>begin</b>
+      <b>for</b> j:=0 <b>to</b> currentlevellist.count-1
+      <b>do</b> TStringlist(currentlevellist.objects[j]).free;
+      CurrentLevelList.clear;
+      currentlevellist.addstrings(nextlevellist);
+      nextlevellist.clear;
+    <b>end</b>;
+  <b>end</b>;
+<b>end</b>;
+
+
+
+<font color="#003399"><i>{******************* TForm1.Solveit ****************}</i></font>
+<b>Procedure</b> TForm1.Solveit(Depthfirst:boolean);
+<font color="#003399"><i>{Common wrapper code for Depth or Breadth first solution methods}</i></font>
+
+   <b>procedure</b> makefile(filename:<b>string</b>; size:integer);
+      <b>var</b>
+        list:TStringlist;
+        newword:<b>string</b>;
+        a,f,c:boolean;
+      <b>begin</b>
+        list:=TStringList.create;
+        pubdic.setrange(<font color="#9933CC">'a'</font>,size,<font color="#9933CC">'z'</font>,size);
+        <b>while</b> pubdic.getnextword(newword,a,f,c) <b>do</b>
+        <b>begin</b>
+          <b>if</b> (length(newword)&gt;0) <b>and</b> (<b>not</b> (a <b>or</b> f))
+          <b>then</b> list.add(uppercase(newword))
+        <b>end</b>;
+        list.savetofile(filename);
+        list.free;
+      <b>end</b>;
+
+<b>var</b>
+  filename:<b>string</b>;
+  r: boolean;
+<b>begin</b>
+  <b>if</b> <b>not</b> solving <b>then</b>
+  <b>begin</b>
+    StopBtn.visible:=true;
+    solving:=false;
+    tag:=0;
+    solving:=true;
+    stepslbl.visible:=false;
+    screen.cursor:=crHourGlass;
+    <b>If</b> length(FromEdt.text)=length(ToEdt.text) <b>then</b>
+    <b>begin</b>
+      Target:=uppercase(ToEdt.text);
+      SolutionListBox.clear;
+      filename:=extractfilepath(application.exename)
+                +<font color="#9933CC">'Words'</font>+inttostr(length(FromEdt.text))
+                +<font color="#9933CC">'.txt'</font>;
+      <b>if</b> <b>not</b> fileexists(filename) <b>then</b> makefile(filename,length(FromEdt.text));
+      <b>if</b> fileexists(filename) <b>then</b>
+      <b>begin</b>
+        wordlist.clear;
+        wordlist.loadfromfile(filename);
+        <b>if</b> depthfirst <b>then</b> R:=MakeDFLadder(uppercase(FromEdt.text),0)
+        <b>else</b> r:=MakeBFLadder(uppercase(FromEdt.text),0);
+        <b>If</b> <b>not</b> r <b>then</b> SolutionListBox.items.add(<font color="#9933CC">'No solution found'</font>)
+        <b>else</b>
+        <b>begin</b>
+          Stepslbl.visible:=true;
+          Stepslbl.caption:=inttostr(SolutionListBox.items.count)+<font color="#9933CC">' Steps'</font>;
+          SolutionListBox.items.add(target);
+        <b>end</b>;
+      <b>end</b>
+      <b>else</b> showmessage(<font color="#9933CC">'Couldn'</font><font color="#9933CC">'t build word list'</font>);
+    <b>end</b>
+    <b>else</b> showmessage(<font color="#9933CC">'Start and End words must be the same length'</font>);
+  <b>end</b>
+  <b>else</b> tag:=1; <font color="#003399"><i>{set stop flag}</i></font>
+  stopbtn.visible:=false;
+  solving:=false;
+  screen.cursor:=crDefault;
+<b>end</b>;
+
+<font color="#003399"><i>{***************** TForm1.DFSolvedBtnClick **************}</i></font>
+<b>procedure</b> TForm1.DFSolveBtnClick(Sender: TObject);
+<b>begin</b>
+  Solveit(true); <font color="#003399"><i>{call depth-first solve wrapper}</i></font>
+<b>end</b>;
+
+<font color="#003399"><i>{***************** TForm1.BFSolveBtnClick ***************}</i></font>
+<b>procedure</b> TForm1.BFSolveBtnClick(Sender: TObject);
+<b>begin</b>
+  Solveit(false); <font color="#003399"><i>{Call breadth-first solve wrapper}</i></font>
+<b>end</b>;
+
+<b>procedure</b> TForm1.ListBox2Click(Sender: TObject);
+<font color="#003399"><i>{select and prepare a sample puzzle}</i></font>
+<b>var</b>
+  w:<b>string</b>;
+  p:integer;
+<b>begin</b>
+  w:=listbox2.items[listbox2.itemindex];
+  p:=pos(<font color="#9933CC">'-'</font>,w);
+  <b>If</b> p&gt;1 <b>then</b>
+  <b>begin</b>
+    fromEdt.text:=trim(copy(w,1,p-1));
+    ToEdt.text:=trim(copy(w,p+1,length(w)-p));
+    SolutionListBox.clear;
+  <b>end</b>;
+<b>end</b>;
+
+<b>procedure</b> TForm1.StopBtnClick(Sender: TObject);
+<b>begin</b>
+   Tag:=1; <font color="#003399"><i>{set a flag to gracefully stop solving}</i></font>
+<b>end</b>;
+
+<b>end</b>.
+
+</code></pre>

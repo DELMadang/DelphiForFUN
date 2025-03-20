@@ -1,0 +1,275 @@
+object Form1: TForm1
+  Left = 296
+  Top = 148
+  AutoScroll = False
+  Caption = 'Move Grid row demo'
+  ClientHeight = 510
+  ClientWidth = 1006
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'Arial'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 120
+  TextHeight = 16
+  object StaticText1: TStaticText
+    Left = 0
+    Top = 487
+    Width = 1006
+    Height = 23
+    Cursor = crHandPoint
+    Align = alBottom
+    Alignment = taCenter
+    Caption = 'Copyright '#169' 2010, Gary Darby,  www.DelphiForFun.org'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -17
+    Font.Name = 'Arial'
+    Font.Style = [fsBold, fsUnderline]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = StaticText1Click
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1006
+    Height = 487
+    Align = alClient
+    AutoSize = True
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 840
+      Top = 8
+      Width = 134
+      Height = 19
+      Caption = 'Move selected row'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      OnClick = BottomBtnClick
+    end
+    object Memo1: TMemo
+      Left = 9
+      Top = 9
+      Width = 432
+      Height = 456
+      Color = 14548991
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Arial'
+      Font.Style = []
+      Lines.Strings = (
+        'Here'#39's some demo code showing how to move a'
+        'row up or down the grid based on arrow clicks.'
+        ''
+        'Moving the row requires a temporary Stringlist to hold '
+        'a row while it is being replaced.  There are two '
+        'versions of the MoveGridRow procedure, one '
+        'receiving a preallocated Temp stringlist as part of its '
+        'calling parameters, another which allocates the '
+        'stringlist, moves the rows, and then frees the list.  The '
+        'timing buttons compare times for the two methods and '
+        'seem to indicate that preallocating has very little (or '
+        'negative) speed-up effect.  The 2nd button hides the '
+        'grid while moving and shiws that  redrawing the grid '
+        'than that uses much more time than actual move time. '
+        ''
+        'A viewer Gordon had requested the  ability to carry a'
+        'hidden "record number" along with each row. I'
+        'implemented this using the "Objects" property for cell 0 '
+        'of each row to hold an integer. Test numbers were '
+        'generated as 10x the original row  number. To verify '
+        'that object data was moved with the rows, "Gordon'#39's '
+        'button" lists the record numbers after the rows have '
+        'been rearranged.')
+      ParentFont = False
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+    object StringGrid1: TStringGrid
+      Left = 464
+      Top = 35
+      Width = 353
+      Height = 273
+      FixedCols = 0
+      RowCount = 20
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+      ScrollBars = ssVertical
+      TabOrder = 1
+    end
+    object DownBtn: TBitBtn
+      Left = 840
+      Top = 124
+      Width = 137
+      Height = 25
+      Caption = 'Down one row'
+      TabOrder = 2
+      OnClick = DownBtnClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333303333
+        333333333337F33333333333333033333333333333373F333333333333090333
+        33333333337F7F33333333333309033333333333337373F33333333330999033
+        3333333337F337F33333333330999033333333333733373F3333333309999903
+        333333337F33337F33333333099999033333333373333373F333333099999990
+        33333337FFFF3FF7F33333300009000033333337777F77773333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333300033333333333337773333333}
+      NumGlyphs = 2
+    end
+    object UpBtn: TBitBtn
+      Left = 840
+      Top = 95
+      Width = 137
+      Height = 25
+      Caption = 'Up one row'
+      TabOrder = 3
+      OnClick = UpBtnClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333000333
+        3333333333777F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333FF7F7FFFF333333000090000
+        3333333777737777F333333099999990333333373F3333373333333309999903
+        333333337F33337F33333333099999033333333373F333733333333330999033
+        3333333337F337F3333333333099903333333333373F37333333333333090333
+        33333333337F7F33333333333309033333333333337373333333333333303333
+        333333333337F333333333333330333333333333333733333333}
+      NumGlyphs = 2
+    end
+    object DownPageBtn: TBitBtn
+      Left = 840
+      Top = 206
+      Width = 137
+      Height = 25
+      Caption = 'Down one page'
+      TabOrder = 4
+      OnClick = DownPageBtnClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333303333
+        333333333337F33333333333333033333333333333373F333333333333090333
+        33333333337F7F33333333333309033333333333337373F33333333330999033
+        3333333337F337F33333333330999033333333333733373F3333333309999903
+        333333337F33337F33333333099999033333333373333373F333333099999990
+        33333337FFFF3FF7F33333300009000033333337777F77773333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333300033333333333337773333333}
+      NumGlyphs = 2
+    end
+    object UpPageBtn: TBitBtn
+      Left = 840
+      Top = 177
+      Width = 137
+      Height = 25
+      Caption = 'Up one page'
+      TabOrder = 5
+      OnClick = UpPageBtnClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333000333
+        3333333333777F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333FF7F7FFFF333333000090000
+        3333333777737777F333333099999990333333373F3333373333333309999903
+        333333337F33337F33333333099999033333333373F333733333333330999033
+        3333333337F337F3333333333099903333333333373F37333333333333090333
+        33333333337F7F33333333333309033333333333337373333333333333303333
+        333333333337F333333333333330333333333333333733333333}
+      NumGlyphs = 2
+    end
+    object TopBtn: TBitBtn
+      Left = 840
+      Top = 35
+      Width = 137
+      Height = 25
+      Caption = 'Up to top'
+      TabOrder = 6
+      OnClick = TopBtnClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333000333
+        3333333333777F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333FF7F7FFFF333333000090000
+        3333333777737777F333333099999990333333373F3333373333333309999903
+        333333337F33337F33333333099999033333333373F333733333333330999033
+        3333333337F337F3333333333099903333333333373F37333333333333090333
+        33333333337F7F33333333333309033333333333337373333333333333303333
+        333333333337F333333333333330333333333333333733333333}
+      NumGlyphs = 2
+    end
+    object BottomBtn: TBitBtn
+      Left = 848
+      Top = 259
+      Width = 137
+      Height = 25
+      Caption = 'Down to bottom'
+      TabOrder = 7
+      OnClick = BottomBtnClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333303333
+        333333333337F33333333333333033333333333333373F333333333333090333
+        33333333337F7F33333333333309033333333333337373F33333333330999033
+        3333333337F337F33333333330999033333333333733373F3333333309999903
+        333333337F33337F33333333099999033333333373333373F333333099999990
+        33333337FFFF3FF7F33333300009000033333337777F77773333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333309033333333333337F7F333333333333090333
+        33333333337F7F33333333333300033333333333337773333333}
+      NumGlyphs = 2
+    end
+    object TimingBtn: TButton
+      Left = 464
+      Top = 320
+      Width = 185
+      Height = 25
+      Caption = 'Run timing tests'
+      TabOrder = 8
+      OnClick = TimingBtnClick
+    end
+    object TimingBtn2: TButton
+      Left = 664
+      Top = 320
+      Width = 185
+      Height = 25
+      Caption = 'Run timing (Hide grid)'
+      TabOrder = 9
+      OnClick = TimingBtn2Click
+    end
+    object GordonBtn: TButton
+      Left = 464
+      Top = 368
+      Width = 129
+      Height = 25
+      Caption = 'Gordon'#39's button'
+      TabOrder = 10
+      OnClick = GordonBtnClick
+    end
+  end
+end

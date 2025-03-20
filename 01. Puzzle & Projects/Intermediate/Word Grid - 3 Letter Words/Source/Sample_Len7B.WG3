@@ -1,0 +1,10 @@
+[Params]
+Columns=2
+SolutionRow=1
+Foreign=0
+HideSolution=0
+Solution=ROTATOR
+[Data]
+Row0=ALABAMA
+Row1=ROTATOR
+Row2=EXEGETE

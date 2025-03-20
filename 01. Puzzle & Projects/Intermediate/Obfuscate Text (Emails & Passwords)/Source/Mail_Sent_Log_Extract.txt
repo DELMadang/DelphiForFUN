@@ -1,0 +1,588 @@
+Commencing Message Delivery at 1/11/2010 7:19:59 PM
+MailList King Release: v9.02R (9.2.1112.546)
+Message Recipient Count: 766
+Sending Method: Outlook
+Sender: DFF Newsletters <ljethiuibeae@delphiforfun.org>
+
+Mail Sending Parameters:
+
+Subject: Delphi For Fun Newsletter #55
+Format: HTML
+HTML Body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/TR/REC-html40"><HEAD><TITLE>Delphi For Fun Newsletter #55</TITLE>
+<META content=en-us http-equiv=Content-Language>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<STYLE>
+
+
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+ div.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+--></STYLE>
+
+<META name="Microsoft Theme" content="copy-of-kidsplainbanne-1- 1011, default">
+<META name=GENERATOR content="MSHTML 8.00.7600.16466"></HEAD>
+<BODY>
+<P style="TEXT-ALIGN: right" class=MsoNormal align=center><FONT size=2><SPAN 
+style="FONT-FAMILY: Comic Sans MS">January 11, 2010</SPAN></FONT></P>
+<P style="TEXT-ALIGN: center" class=MsoNormal align=center><FONT size=4><SPAN 
+style="FONT-FAMILY: Comic Sans MS; COLOR: black; FONT-SIZE: 13.5pt">Delphi For 
+Fun Newsletter #</SPAN><SPAN style="FONT-FAMILY: Comic Sans MS">55<SPAN 
+style="COLOR: #000000">&nbsp;<B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</B></SPAN></SPAN></FONT></P>
+<P style="TEXT-ALIGN: right" class=MsoNormal align=right><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: black"></SPAN></P>
+<P class=MsoNormal><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: #000080">Another season, another 
+newsletter.&nbsp;&nbsp;</SPAN></P>
+<P class=MsoNormal><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: #000080"><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: #000080">This newsletter is being 
+sent with a&nbsp;version 9 of MailListKing, the mailing list program written in 
+Delphi, which has had a few problems in the past when sending many emails.&nbsp; 
+It has&nbsp;features that make it easy to add new members, process 
+"unsubscribes" and invalid email addresses, etc so&nbsp;here's hoping the 
+sending problem is&nbsp;fixed.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></P>
+<P class=MsoNormal><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: #000080">&nbsp;Most of our 
+hemisphere is feeling the cold more than usual this winter, The last month has 
+take taken two months' worth of firewood here in the Virginia 
+mountains.&nbsp;&nbsp; A good excuse to stay in and write programs though, 
+except for my daily outing to scatter&nbsp; a little corn to help our deer and 
+turkeys survive.&nbsp;&nbsp; It's nature's way that the most fit survive even if 
+humans occasionally try to nudge the process one way or the other.&nbsp; Too bad 
+that so many "environmental" groups and the&nbsp; "no climate change" advocates 
+don't recognize that change is inevitable and, in the long run, a good 
+thing.&nbsp;&nbsp; Without change, we would&nbsp;not be here!</SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial,sans-serif"><FONT 
+color=#000080>Oops, sorry for the minor rant&nbsp; -&nbsp; solving problems and 
+puzzles with the computer is much easier and less controversial than getting 
+agreement on whether man is part of nature or can control it.&nbsp;&nbsp; Here 
+are my "What's New" entries for the last quarter of 2009.&nbsp; 
+</FONT></SPAN></P>
+<P class=MsoNormal><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: black">&nbsp;</SPAN><SPAN 
+style="COLOR: #8064a2"><FONT size=2 
+face=Arial,sans-serif>---------------------------------------------------------------------------------</FONT></SPAN></P>
+<P align=left><FONT face=Arial,sans-serif><B><FONT size=2>October 4, 2009:&nbsp; 
+</FONT></B><A 
+href="C:/Users/Gary Darby/Desktop/Programs/Delphi_Techniques/Number_Words.htm"><FONT 
+size=2>Number Words Version 2</FONT></A><FONT size=2>, posted in the Delphi 
+Techniques section of DFF, builds on the original version by adding conversion 
+back from "number words" to numbers (e.g. seventeen to 17).&nbsp; It also 
+solves, or allows you to solve and check, the answer to&nbsp; one of those self 
+referencing statement puzzles:&nbsp; <FONT color=#800000>"This sentence holds 
+_________ L's, __________ N's, and __________ vowels in all."&nbsp; </FONT>where 
+the blank fields are to be filled with number words which make the statement 
+true.&nbsp;&nbsp; This is another recent puzzle from my favorite source,&nbsp; 
+the&nbsp; Puzzle-A-Day Mensa Calendar.&nbsp;&nbsp;</FONT></FONT></P>
+<P align=left><FONT size=2><FONT face=Arial,sans-serif>Note: I have&nbsp; a 
+Lazarus/FPC version of this program but I don't feel comfortable in distributing 
+it yet.&nbsp; Lazarus is a free open source front end to Free Pascal Compiler 
+(FPC) and which provides a Delphi look-alike environment.&nbsp;&nbsp; 
+</FONT><I><FONT face=Arial,sans-serif><FONT color=#800080>As you may or may not 
+know, Embarcadero, the current owners of Delphi have withdrawn all free versions 
+and do not seem interested attracting or retaining the student/hobbyist 
+programming community.</FONT> </FONT></I><FONT face=Arial,sans-serif>&nbsp; What 
+a shortsighted approach!&nbsp;&nbsp; </FONT></FONT></P>
+<P align=left><FONT size=2 face=Arial,sans-serif>I admire the work that has been 
+done on Lazarus, but I've had a hard time getting things to run.&nbsp; Whether 
+that is due to differences with Delphi, bugs, lack of documentation, or just my 
+ignorance has yet to be determined.&nbsp;&nbsp; If there are Lazarus users out 
+there who would like to help educate me, let me know and I'll send the program 
+and a whole bunch of questions.&nbsp;&nbsp; </FONT></P>
+<P align=left><FONT face=Arial,sans-serif><B><FONT size=2>October 16, 
+2009:&nbsp; </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/Library/bigfloat.htm"><FONT 
+size=2>BigFloatTest</FONT></A></B><FONT size=2> was reposted today to 
+incorporate two small changes to our large floating point arithmetic unit&nbsp; 
+<B>UBigFloatV3</B>.&nbsp; The <B>Add </B>procedure to add one <B>TBigFloat</B> 
+number to another could produce erroneous results when a number with a very 
+large exponent was added to another with a very large negative exponent (a very 
+small number).&nbsp;&nbsp;&nbsp; Also procedure <B>Reciprocal</B> could loop and 
+produce an "Out of Memory" error under certain conditions.&nbsp; Division uses 
+<B>Reciprocal</B> to divide by multiplying and a user encountered the error when 
+computing 1/99,999,999,999,999,999,999.&nbsp;&nbsp; Thanks to Charles Doumar for 
+the corrections posted yesterday in library file <B>DFFLibV13</B>.&nbsp;&nbsp; 
+</FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>October 17, 
+2009:</B>&nbsp;&nbsp; An ongoing task these days is converting and recompiling 
+programs that have display problems when operating system </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/Delphi_Techniques/DPI Scaling.htm" 
+target=_blank><FONT size=2>DPI scaling</FONT></A><FONT size=2> is set to 
+increase text size.&nbsp;&nbsp; I'm converting them as I encounter 
+problems.&nbsp; Today's posting&nbsp; is&nbsp; </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/bigcombos.htm"><FONT 
+size=2>BigCombos</FONT></A><FONT size=2> which displays combinations and 
+permutations&nbsp; of arbitrarily large size.&nbsp; I needed the program to 
+convince a viewer that it is not feasible to check all possible ways to arrange 
+68 items.&nbsp; There are are about 2.5 x 10<SUP>96 </SUP>ways; much larger than 
+the estimated number of atoms in the known universe 
+(10<SUP>80</SUP>).</FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>October 18, 2009: 
+</B>&nbsp;Woohoo!&nbsp; I found out yesterday that I have been nominated for the 
+</FONT><A 
+href="http://wings-of-wind.com/2009/10/17/spirit-of-delphi-award-2009-the-poll/"><FONT 
+size=2>"Spirit of Delphi" award</FONT></A><FONT size=2>.&nbsp; I recognize 
+enough names on the list to make me proud to be included in that company even 
+though participating in "community" has never been a priority.&nbsp;&nbsp; 
+</FONT></FONT></P>
+<P align=left><FONT size=2 face=Arial,sans-serif>I have heard a rumor that 
+Embarcadero, the current owner of Delphi, is considering a free or cheap 
+"learners" version of Delphi.&nbsp;&nbsp; IMO, that's our best hope to have the 
+language survive into the next generation.&nbsp; </FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>October 25, 
+2009:&nbsp; </B><IMG border=0 align=left 
+src="http://delphiforfun.org/Programs/images/jumpingfrogs.png" width=420 
+height=81>The </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/jumpingfrogs.htm"><FONT 
+size=2>Jumping Frogs</FONT></A><FONT size=2> puzzle is easy to find on the 
+web.&nbsp; My simple version has "Undo" for user moves but was written mainly to 
+make sure I remembered how to search a "state graph" for solutions.&nbsp; <BR 
+clear=left></FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>October 29, 
+2009:&nbsp; I</B>n the original October 25th version, the </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/jumpingfrogs.htm"><FONT 
+size=2>Jumping Frogs</FONT></A><FONT size=2> were too large for the pond on most 
+systems (those which do not use DPI scaling).&nbsp; Hopefully, it's fixed 
+today.&nbsp;&nbsp;&nbsp;&nbsp; </FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>November 2, 
+2009:&nbsp; </B>This card probability question was posted, and partially 
+answered, three years ago. </FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B><FONT 
+color=#800000>Given two card rank values, </FONT></B><FONT color=#800000><B>what 
+is the probability that there are one or more occurrences of the two values 
+being adjacent or with only one intervening card in a well shuffled standard 52 
+card deck?</B></FONT></FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2>The original version used 
+generated random card decks to answer the question experimentally by checking 
+lots of decks and counting what proportion of them met the card placement 
+conditions.&nbsp; I had asked then about an analytical solution - it took three 
+years but programmer and fellow puzzleist Mark Rickert came with the key concept 
+(and sample C code) that allows exact solutions.&nbsp; </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/Math_Topics/CardProbability.htm"><FONT 
+size=2>Card Probability Version 2 </FONT></A><FONT size=2>&nbsp;has my 
+implementation of the algorithm and even throws in Mark's C code translated to 
+Delphi as a bonus!</FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>November 13, 2009: 
+</B>&nbsp;</FONT></FONT></P>
+<P align=left><FONT size=2 face=Arial,sans-serif><IMG border=0 align=left 
+src="http://delphiforfun.org/Programs/images/KenKen.png" width=342 
+height=335></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2>Our AARP Bulletin this 
+month contains this puzzle, shown here partially solved. It's an example of a 
+puzzle game called KenKen; similar to Sudoku except that the board is divided 
+into "cages" with an operation and a target value associated with each 
+cage.&nbsp; The digits 1 to 5 must be placed on the board so that they can be 
+connected with the given operator to form the given target value in every 
+cage.&nbsp; In addition, no digit can be repeated in any column or row.&nbsp; My 
+</FONT><A href="C:/Users/Gary Darby/Desktop/Programs/KenKen.htm"><FONT 
+size=2>KenKen Version 1</FONT></A><FONT size=2> program is a simple playable 
+test bed to help&nbsp; investigate algorithms for automatically solving this 
+type of puzzle "just for fun".&nbsp;&nbsp; </FONT><SPAN 
+style="FONT-SIZE: 12pt"><FONT size=2>At the puzzle owner's request I am 
+informing you that KenKen&reg; is a registered trademark of Nextoy, LLC and that 
+this site is not affiliated with Nextoy, LLC or KenKen Puzzle 
+LLC.<BR></FONT></SPAN></FONT><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; FONT-SIZE: 12pt"><BR></SPAN><FONT size=2 
+face=Arial,sans-serif>&nbsp;&nbsp;&nbsp;&nbsp; <BR clear=left></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>November 19, 
+2009:</B>&nbsp; While working on some upcoming changes to our Sound generator 
+program, I discovered that our Metronome program posted several years ago, does 
+not like to play the "click" wav files when run under Vista or Windows 
+7.&nbsp;&nbsp; </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/metronome.htm"><FONT size=2>Metronome 
+Version 2</FONT></A><FONT size=2> adds two additional "click" sound files to 
+address the problem.&nbsp; <B>Click1Vista</B> and <B>Click2Vista</B> files 
+extend the duration of each click to be&nbsp; audible.&nbsp; Vista made major 
+changes to audio processing including moving many functions to run as a 
+service.&nbsp; For some reason, the minimum played sound now seems to be 31 
+milliseconds.&nbsp;&nbsp;&nbsp; </FONT></FONT></P>
+<P><FONT face=Arial,sans-serif><FONT size=2><B>November 15, 2009:</B>&nbsp; This 
+may be a project first, coding </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/KenKen.htm"><FONT size=2>KenKen 
+Version 2</FONT></A><FONT size=2>, with the "Solve it" button, turned out not to 
+take as long as I though it would!&nbsp; I included one additional sample test 
+puzzle also; a 9x9 hard version that I wouldn't care to solve by hand.&nbsp; 
+</FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>November 24, 
+2009:&nbsp; </B>We're off to spend Thanksgiving with family and then taking a 
+two week repositioning cruise hitting a few western Mediterranean sites in 
+Italy, France and Spain and the across the big waters to New York City.&nbsp; 
+I'm not sure about Internet availability on board, so if email responses are 
+delayed, be patient;&nbsp; I'll catch up when we get back in 
+mid-December.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>December 18, 
+2009:&nbsp; </B>Safely<B> </B>back home from our first (and last) repositioning 
+cruise.&nbsp; The first week, visiting Barcelona, Cannes, Florence, Rome, 
+Corsica, and Malaga were great.&nbsp; The second week, crossing the Atlantic, 
+not so much.&nbsp; We're not into casinos, disco, game shows, rock wall 
+climbing, or spa treatments, so that left plenty of time for reading.&nbsp; Of 
+course, being retired, I have plenty of time for reading any week I 
+choose.&nbsp; Seas were rough a couple of days with 30+ foot waves and 
+quartering head winds of 90 to 100 mph.<I>&nbsp; </I>&nbsp;I wish I had had an 
+accelerometer to measure the G forces imparted when a 93,000 ton ship descending 
+collides 180 degrees out of phase with with a 30 foot wave. Not enough to shake 
+one out of bed, but enough to prevent sleep for sure.&nbsp;&nbsp; No sea 
+sickness for us, but I was unlucky enough to pick up an unpleasant intestinal 
+virus two days from port from which I'm just recovering.&nbsp; So, we've chalked 
+it up to "live and learn" and move on.</FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2>There was only one 
+programming request that seemed to require action when we returned home.&nbsp; 
+The Traveling Salesman Problem&nbsp; program posted in 2002&nbsp; allows users 
+to trace paths visiting all of a random set of cities and compare their distance 
+to the shortest distance calculated by the program.&nbsp; There are options for 
+"closed" or "open" routes depending on whether we end up at the city we started 
+from.&nbsp; A student using the program for a project has a requirement to begin 
+the open route at a specified city but my original version always started at the 
+western-most city.&nbsp;&nbsp;&nbsp; </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/traveling_salesman.htm"><FONT 
+size=2>Traveling Salesman Problem, Version 2</FONT></A><FONT size=2> posted 
+today corrects that oversight and starts open routes at the first city selected 
+by the user.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><FONT size=2><B>December 28, 
+2009:&nbsp; </B>Here's wishing everyone a happy holiday season.&nbsp; Christmas 
+here was not the best ever here along the Blue Ridge.&nbsp; Ice and wind on 
+Christmas eve knocked out our electricity for 3 days.&nbsp; It was a small 
+reminder of what it was like in the olden days without power. Believe me, with 
+power is better, (especially for a computer programmer ).&nbsp;&nbsp; It's back 
+today, so I'll get one more program posted before the year ends.&nbsp; 
+</FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><A 
+href="C:/Users/Gary Darby/Desktop/Programs/Math_Topics/circle_from_3_points.htm"><FONT 
+size=2>Circle From 3 Points, Version 2</FONT></A><FONT size=2> is a extension of 
+our program which explores the math defining the circle passing through any 3 
+given points (unless they happen to fall on the same straight line).&nbsp; The 
+original version used mouse clicks to define the points.&nbsp; Version 2 allows 
+users to input three&nbsp; floating point values of arbitrary scale.&nbsp; I 
+needed that to help solve a specific puzzle from one of the puzzle books 
+received as a Christmas gift.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</FONT></FONT></P>
+<P align=left><FONT face=Arial,sans-serif><B><FONT size=2>January 2, 
+2010:</FONT>&nbsp; </B>&nbsp;</FONT></P>
+<P align=left><FONT color=#ff0000 size=6 face="Comic Sans MS">Happy New 
+Year!&nbsp;&nbsp; </FONT><FONT face=Arial><FONT size=2>We'll kick off the new 
+year with a program that I wrote a year or so ago but never got around to 
+posting.&nbsp; </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/AccordionSolitaire.htm"><FONT 
+size=2>Accordion Solitaire</FONT></A><FONT size=2> is a simple solitaire card 
+game that is difficult to win; perhaps one win in 100 games.&nbsp;&nbsp; This 
+version allows user and program play and implements a "sweeper" strategy of play 
+which can increase the odds of winning to perhaps 10%</FONT></FONT></P><FONT 
+face=Arial><FONT size=2><B>January 4, 2010:</B> </FONT></FONT>
+<P></P>
+<DIV style="FLOAT: left">
+<TABLE border=0 cellPadding=9 width="14%">
+  <TBODY>
+  <TR>
+    <TD>
+      <P style="TEXT-ALIGN: center"><FONT size=2 face=Arial><IMG border=0 
+      hspace=10 align=left 
+      src="http://delphiforfun.org/Programs/images/4InARow2.gif" width=148 
+      height=122></FONT></P></TD></TR>
+  <TR>
+    <TD>
+      <P style="TEXT-ALIGN: center"><FONT face=Arial><FONT size=2>&nbsp;<FONT 
+      color=#ff0000><I>Red wins!&nbsp; 
+  </I></FONT></FONT></FONT></P></TD></TR></TBODY></TABLE></DIV>
+<P align=left><FONT size=2></FONT></P>
+<P align=left><FONT face=Arial><FONT size=2>While playing the "Wii Play" version 
+of the Four-In-A-Row game with a grandson over the holidays, I used my Delphi 
+version of the game to advise me on&nbsp; moves to make.&nbsp; I was embarrassed 
+to find that the program's random moves "enhancement" frequently allowed Chris 
+to win by placing 4 adjacent token in his first 4 moves - the initial random 
+moves feature assumed that there would be no winner that soon.&nbsp; </FONT><A 
+href="C:/Users/Gary Darby/Desktop/Programs/FourInARow2.htm"><FONT size=2>Four In 
+A Row Version 2.2</FONT></A><FONT size=2> posted today fixes the problem by 
+limiting initial random moves to 2 or 3 turns.&nbsp;<BR 
+clear=left>&nbsp;</FONT></FONT><FONT face=Arial><FONT size=2><B>January 9, 
+2010</B>: </FONT></FONT><FONT size=2 face=Arial><IMG border=0 hspace=10 
+align=right src="http://delphiforfun.org/Programs/images/InstantInsanityV.png" 
+width=70 height=203></FONT></P>
+<P align=left><FONT size=2 face=Arial>"Instant Insanity" is a variation of an 
+older cube arrangement puzzle and one of a large family of similar puzzles. In 
+this one, we have four cubes with one of four colors on each face of each 
+cube.&nbsp; The objective is to stack the cubes so each column of&nbsp; faces 
+has all four colors. </FONT></P>
+<P align=left><FONT face=Arial><FONT size=2>A viewer recently asked for help in 
+developing a Delphi solver version.&nbsp; Most of the online literature 
+describes a graph search algorithm which can be applied to find solutions with 
+pencil and paper.&nbsp; With a faster but dumber computer, it's easiest just to 
+check all 41,472 possible arrangements&nbsp; looking for&nbsp; solutions.&nbsp; 
+</FONT><A href="C:/Users/Gary Darby/Desktop/Programs/Instant_Insanity.htm"><FONT 
+size=2>Instant Insanity Version 1.0</FONT></A><FONT size=2> posted today does 
+just that with a few sample or user defined cube sets.&nbsp;&nbsp;<BR 
+clear=right></FONT></FONT><SPAN style="FONT-FAMILY: Arialsize=3">
+<HR align=center SIZE=2 width="100%">
+</SPAN>
+<P></P>
+<P class=MsoNormal><FONT color=#800000 face=Arial><FONT size=2><B><EM>The 
+quality of a person's life is in direct proportion to their commitment to 
+excellence, regardless of their chosen field of endeavor</EM></B>. - Vince 
+Lombardi (Football Coach)</FONT><B><BR><FONT size=2><EM>It's not whether you get 
+knocked down; it's whether you get back up</EM></FONT></B><FONT 
+size=2><EM>.</EM>&nbsp; Vince Lombardi (Football Coach)</FONT></FONT></P>
+<P class=MsoNormal><FONT color=#800000 face=Arial><FONT size=2><B><EM>Talent is 
+cheaper than table salt. What separates the talented individual from the 
+successful one is a lot of hard work</EM>.</B> - Stephen King (Author)</FONT> 
+</FONT></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arialsize=3"></SPAN></P>
+<HR align=center SIZE=2 width="100%">
+
+<P></P>
+<P class=MsoNormal><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: black"><FONT size=2>To subscribe or 
+unsubscribe from this newsletter, visit </FONT><A 
+style="COLOR: blue; TEXT-DECORATION: underline; text-underline: single" 
+title=http://delphiforfun.org/newsletter.htm 
+href="C:/Users/Gary Darby/Desktop/newsletter.htm"><FONT 
+size=2>http://delphiforfun.org/newsletter.htm</FONT></A></SPAN></P>
+<P class=MsoNormal><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: black"><FONT size=2>298,000 home 
+page visitors since Sept 2000</FONT></SPAN><FONT size=2><STRONG><SPAN 
+style="FONT-FAMILY: Arial,sans-serif">.</SPAN></STRONG></FONT><SPAN 
+style="FONT-FAMILY: Arial,sans-serif; COLOR: black"><FONT 
+size=2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;217,000 program downloads in the past 12 
+months!</FONT></SPAN></P>
+<P></P>
+<P class=MsoNormal></P>
+<P align=left><FONT face=Arial><BR><BR></FONT></P></BODY></HTML>
+Attachment Count: 0
+Sender: DFF Newsletters <uzpzfwatdvcb@delphiforfun.org>
+Personalized: False
+Commencing Send (3)
+
+To Recipient Count: 1
+CC Recipient Count: 0
+BCC Recipient Count: 50
+Recipients per Message: 1
+
+Sending Message with Outlook (Extended MAPI)
+Adding To recipient: DFFNews <vusiiwvkxseigrl@delphiuforfun.org>
+Adding BCC Recipient: nhpltuxigeo@wanadoo.fr
+Adding BCC Recipient: tiueyv@gmail.com
+Adding BCC Recipient: hhotqa@kliksafe.nl
+Adding BCC Recipient: cszpjvrv@yahoo.com
+Adding BCC Recipient: xsdsmztrnbxzihc@socgen.com
+Adding BCC Recipient: txpfjxhicgubes@yahoo.co.in
+Adding BCC Recipient: gffdjtww@yahoo.com
+Adding BCC Recipient: uhxrj@consolidated.net
+Adding BCC Recipient: tornazk@gmail.com
+Adding BCC Recipient: ooh@mozcom.com
+Adding BCC Recipient: dqfkx@poczta.onet.pl
+Adding BCC Recipient: dcqn@novuslogic.com
+Adding BCC Recipient: vuwkamugzw@verizon.net
+Adding BCC Recipient: ebntqbbya@yahoo.com
+Adding BCC Recipient: zajutaxkjqpwqz@yahoo.com
+Adding BCC Recipient: rndcprhys@msn.com
+Adding BCC Recipient: inmmijgprkev@gmail.com
+Adding BCC Recipient: zzrw@hellix.com
+Adding BCC Recipient: tqtsvjll@gmail.com
+Adding BCC Recipient: nxe@zoo.uc.pt
+Adding BCC Recipient: panzaj@btinternet.com
+Adding BCC Recipient: rtatvvxir@tiscalinet.it
+Adding BCC Recipient: hdhgjj@spring8.or.jp
+Adding BCC Recipient: flkbgjibw@hotmail.com
+Adding BCC Recipient: pszumbrhwfdw@rediffmail.com
+Adding BCC Recipient: dogbyrqpsvns@gmail.com
+Adding BCC Recipient: fcxvwusfghih@hotmail.com
+Adding BCC Recipient: raljdkcnkr@power.alstom.com
+Adding BCC Recipient: hoqqrfplhgbvdb@yahoo.co.id
+Adding BCC Recipient: nlauamhfmjz@yahoo.com.ar
+Adding BCC Recipient: zeiumh@mail.nauta.it
+Adding BCC Recipient: pafilrucjjb@gmail.com
+Adding BCC Recipient: ucckjbxnl@email.it
+Adding BCC Recipient: vqsjkrpkmsjw@myway.com
+Adding BCC Recipient: ztyunf@global-seguros.pt
+Adding BCC Recipient: jipkmz@geraenergia.com.br
+Adding BCC Recipient: yvgytpy@netcabo.pt
+Adding BCC Recipient: dyefpguyzy@dosen.dinus.ac.id
+Adding BCC Recipient: usqvekacx@just.edu.jo
+Adding BCC Recipient: iiuuy@rakefet.net
+Adding BCC Recipient: vwwtguqhxk@yahoo.com
+Adding BCC Recipient: vrmslste@hotmail.com
+Adding BCC Recipient: synhfwfqkpcluc@peekundcloppenburg.de
+Adding BCC Recipient: hzjatw@statcom.com.au
+Adding BCC Recipient: xjuwoiijmyfhr@btinternet.com
+Adding BCC Recipient: iayegvlnir@gmail.com
+Adding BCC Recipient: ulrzucdju@libero.it
+Adding BCC Recipient: qrdylvgrrqqw@iname.com
+Adding BCC Recipient: kdzltbkzcdyvsog@ntlworld.com
+Adding BCC Recipient: lhxkrkihh@btinternet.com
+SEND OK
+pglrpayzfks@wanadoo.fr: SUCCESS
+wwmtpb@gmail.com: SUCCESS
+btihve@kliksafe.nl: SUCCESS
+mxerzcba@yahoo.com: SUCCESS
+pgabjplugcczmuj@socgen.com: SUCCESS
+xujmawtplbipli@yahoo.co.in: SUCCESS
+wgcnrabi@yahoo.com: SUCCESS
+zlovn@consolidated.net: SUCCESS
+ecwefcx@gmail.com: SUCCESS
+ddl@mozcom.com: SUCCESS
+slfou@poczta.onet.pl: SUCCESS
+rtls@novuslogic.com: SUCCESS
+gzptglnctp@verizon.net: SUCCESS
+gioiruybr@yahoo.com: SUCCESS
+mngvxrdrwmcugd@yahoo.com: SUCCESS
+yvakxjtus@msn.com: SUCCESS
+qxwfwikriyui@gmail.com: SUCCESS
+uikz@hellix.com: SUCCESS
+qwzzdlsk@gmail.com: SUCCESS
+gcs@zoo.uc.pt: SUCCESS
+kojvse@btinternet.com: SUCCESS
+frkhwdmvu@tiscalinet.it: SUCCESS
+fkbpnl@spring8.or.jp: SUCCESS
+zbypoamin@hotmail.com: SUCCESS
+rtjyqjqbluha@rediffmail.com: SUCCESS
+abngoetfatkz@gmail.com: SUCCESS
+ctdpyhjnmfpj@hotmail.com: SUCCESS
+avscjqgmql@power.alstom.com: SUCCESS
+ktsfdttpxqfhpe@yahoo.co.id: SUCCESS
+oisikwfpwif@yahoo.com.ar: SUCCESS
+ydemrw@mail.nauta.it: SUCCESS
+xlwvvsfrkcp@gmail.com: SUCCESS
+ccxshbggd@email.it: SUCCESS
+nwicyrumxbzc@myway.com: SUCCESS
+irdlqy@global-seguros.pt: SUCCESS
+cmkhgz@geraenergia.com.br: SUCCESS
+fvezjot@netcabo.pt: SUCCESS
+oclhpmtqrz@dosen.dinus.ac.id: SUCCESS
+ahayplckt@just.edu.jo: SUCCESS
+sppxq@rakefet.net: SUCCESS
+sibvrjsokp@yahoo.com: SUCCESS
+jdxrcemd@hotmail.com: SUCCESS
+gxpimvlwlneuno@peekundcloppenburg.de: SUCCESS
+msfmso@statcom.com.au: SUCCESS
+pmqdhkizstepm@btinternet.com: SUCCESS
+palfnzwsug@gmail.com: SUCCESS
+sxnbetkqt@libero.it: SUCCESS
+pszulqytonog@iname.com: SUCCESS
+loslhylkqvluvqv@ntlworld.com: SUCCESS
+bbgjcvmkw@btinternet.com: SUCCESS
+
+To Recipient Count: 1
+CC Recipient Count: 0
+BCC Recipient Count: 50
+Recipients per Message: 1
+
+Sending Message with Outlook (Extended MAPI)
+Adding To recipient: DFFNews <hjqdxeyoqmmxxvi@delphiuforfun.org>
+Adding BCC Recipient: mruikkxp@mweb.co.za
+Adding BCC Recipient: kifybzh@hotmail.com
+Adding BCC Recipient: tptbaezhe@databexit.fi
+Adding BCC Recipient: momisuzjerxcrrvq@sb-brixen.it
+Adding BCC Recipient: stvvlmxy@online.no
+Adding BCC Recipient: lebnpiao@netvision.net.il
+Adding BCC Recipient: qoelck@poczta.onet.pl
+Adding BCC Recipient: lfryhvpasw@gmx.net
+Adding BCC Recipient: ejfqjhfxv@yahoo.co.in
+Adding BCC Recipient: ftfcngyfvokow@gmail.com
+Adding BCC Recipient: mnfb@comhem.se
+Adding BCC Recipient: ahzupplcwhh@cim-sys.com
+Adding BCC Recipient: chngy@uabc.mx
+Adding BCC Recipient: lcehpuymcbav@hotmail.com
+Adding BCC Recipient: ozdbda@hotmail.com
+Adding BCC Recipient: moetwts@arcor.de
+Adding BCC Recipient: Amy Ware <yzdlu@cvalink.com>
+Adding BCC Recipient: lwkvcojxd@yahoo.com
+Adding BCC Recipient: oujqrjiwlrjn@its.tudelft.nl
+Adding BCC Recipient: bvsgafbo@wagonsoft.com
+Adding BCC Recipient: jgqawvva@gmx.de
+Adding BCC Recipient: hpstzytyltfwxm@yahoo.com.tr
+Adding BCC Recipient: kldqkbo@comcast.net
+Adding BCC Recipient: fjlikbtex@hotmail.com
+Adding BCC Recipient: iwsxefnmuutv@ssa.ocgov.com
+Adding BCC Recipient: mttnyiumgj@aanet.com.au
+Adding BCC Recipient: uavlhvcom@libero.it
+Adding BCC Recipient: ujldurpvr@yahoo.com
+Adding BCC Recipient: hjvuuc@bigpond.net.au
+Adding BCC Recipient: npqdcwercks@hotmail.com
+Adding BCC Recipient: qaqr@clearfreight.com
+Adding BCC Recipient: htmpjyjf@gmail.com
+Adding BCC Recipient: pnglfr@yahoo.com
+Adding BCC Recipient: eyrf@spl-t.com
+Adding BCC Recipient: ovrjyrgvq@hotmail.com
+Adding BCC Recipient: mlcexama@btinternet.com
+Adding BCC Recipient: pbujfj@porpoisemedia.com
+Adding BCC Recipient: blpcurtgfd@aol.com
+Adding BCC Recipient: tozrsvbj@student.dei.uc.pt
+Adding BCC Recipient: zqpztvmlq@yahoo.com
+Adding BCC Recipient: vjkrsu@club-internet.fr
+Adding BCC Recipient: xkfkdzs@prclaser.com
+Adding BCC Recipient: hafdnsusx@gmail.com
+Adding BCC Recipient: segiujxyq@gmail.com
+Adding BCC Recipient: ttorcaz@gmail.com
+Adding BCC Recipient: swcirmb@zahav.net.il
+Adding BCC Recipient: oxytqixwg@hotmail.com
+Adding BCC Recipient: hksqntkmnttjcn@hotmail.com
+Adding BCC Recipient: gtmbmcobg@gmail.com
+Adding BCC Recipient: qkkmfpos@nashua.edu
+SEND OK
+ydgurjzt@mweb.co.za: SUCCESS
+bxfpzhm@hotmail.com: SUCCESS
+ydenqvhom@databexit.fi: SUCCESS
+jatgegvktsombpgh@sb-brixen.it: SUCCESS
+cpnwqpze@online.no: SUCCESS
+ahzxgoww@netvision.net.il: SUCCESS
+ejzurr@poczta.onet.pl: SUCCESS
+fngzkgdupn@gmx.net: SUCCESS
+jirzucpqh@yahoo.co.in: SUCCESS
+tifuivstwwryb@gmail.com: SUCCESS
+wiyj@comhem.se: SUCCESS
+dtxtezbvrda@cim-sys.com: SUCCESS
+mkqox@uabc.mx: SUCCESS
+xpmpjjexxhif@hotmail.com: SUCCESS
+hpgsmb@hotmail.com: SUCCESS
+zjeiqsb@arcor.de: SUCCESS
+lafaz@cvalink.com: SUCCESS
+lqfpatjgz@yahoo.com: SUCCESS
+yhxlsqtkhfpp@its.tudelft.nl: SUCCESS
+vshdqhur@wagonsoft.com: SUCCESS
+lobmeazs@gmx.de: SUCCESS
+huxaheoyunsqxp@yahoo.com.tr: SUCCESS
+zrnaqwc@comcast.net: SUCCESS
+nxzzpyzhj@hotmail.com: SUCCESS
+voxovqfhepjb@ssa.ocgov.com: SUCCESS
+basbitygfo@aanet.com.au: SUCCESS
+rrialiefe@libero.it: SUCCESS
+pqenpslxe@yahoo.com: SUCCESS
+kkdxwm@bigpond.net.au: SUCCESS
+lfyzyrahuml@hotmail.com: SUCCESS
+dbjx@clearfreight.com: SUCCESS
+jkgdtgyi@gmail.com: SUCCESS
+orgwlm@yahoo.com: SUCCESS
+fvvd@spl-t.com: SUCCESS
+dneklbqvj@hotmail.com: SUCCESS
+lstxwldf@btinternet.com: SUCCESS
+mglnmj@porpoisemedia.com: SUCCESS
+oowzkrhxly@aol.com: SUCCESS
+cwowllgp@student.dei.uc.pt: SUCCESS
+khgqjkxpb@yahoo.com: SUCCESS
+dokbus@club-internet.fr: SUCCESS
+aqisnag@prclaser.com: SUCCESS
+ifabufjai@gmail.com: SUCCESS
+edpwticrs@gmail.com: SUCCESS
+qqkoaae@gmail.com: SUCCESS
+efbvjll@zahav.net.il: SUCCESS
+hrzoqsabi@hotmail.com: SUCCESS
+vkmszeezhinxak@hotmail.com: SUCCESS
+rymkwynqw@gmail.com: SUCCESS
+gjxtyrvq@nashua.edu: SUCCESS
+
+To Recipient Count: 1
+CC Recipient Count: 0
+BCC Recipient Count: 50
+Recipients per Message: 1
+
+

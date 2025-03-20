@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Translations 1.0\n"
+"POT-Creation-Date: 2011-07-18 09:32\n"
+"PO-Revision-Date: 2011-07-18 09:59-0500\n"
+"Last-Translator: Gary Darby <garyd@delphiforfun.org>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: dxgettext 1.2.2\n"
+
+#. Form1..Caption
+#: U_Translations.dfm:5
+msgid "Translations:  Demonstration of multiple language support "
+msgstr "Translations: Demonstration der Unterstützung für mehrere Sprachen"
+
+#. Form1..Panel1..Label1..Caption
+#: U_Translations.dfm:50
+msgid "Hello World!"
+msgstr "Hallo Welt!"
+
+#. Form1..Panel1..Label2..Caption
+#: U_Translations.dfm:65
+msgid "Locale language is "
+msgstr "Lokale Sprache ist "
+
+#. Form1..Panel1..Label4..Caption
+#: U_Translations.dfm:78
+msgid "Current language is "
+msgstr "Aktuelle Sprache ist "
+
+#. Form1..Panel1..ChangeBtn..Caption
+#: U_Translations.dfm:91
+msgid "Change the message"
+msgstr "Andern Sie die Nachricht"
+
+#. Form1..Panel1..LanguageGrp..Caption
+#: U_Translations.dfm:106
+msgid "Select a different language"
+msgstr "Wahlen Sie eine andere Sprache"
+
+#. Form1..Panel1..LanguageGrp....Items.Strings
+#: U_Translations.dfm:114
+msgid "English"
+msgstr "Englisch"
+
+#. Form1..Panel1..LanguageGrp....Items.Strings
+#: U_Translations.dfm:115
+msgid "French"
+msgstr "Franzosisch"
+
+#. Form1..Panel1..LanguageGrp....Items.Strings
+#: U_Translations.dfm:116
+msgid "German"
+msgstr "Deutsch"
+
+#. Form1..Panel1..LanguageGrp....Items.Strings
+#: U_Translations.dfm:117
+msgid "Spanish"
+msgstr "Spanisch"
+
+#. Form1..Panel1..LanguageGrp....Items.Strings
+#: U_Translations.dfm:118
+msgid "Southern USA"
+msgstr "Suden der USA"
+
+
+#: U_Translations.pas:117
+msgid "Goodbye!"
+msgstr "Auf Wiedersehen!"
+
+
+msgid "Click this link to visit the DFF web page with details about adding multi-language support to your Delphi programs."
+msgstr "Klicken Sie auf diesen Link, um die DFF Web-Seite mit Details über das Hinzufügen von Unterstützung für mehrere Sprachen zu Ihrem Delphi-Programme zu besuchen."
+
+#~ msgid "Multiple language support demonstration"
+#~ msgstr "Unterstutzung mehrerer Sprachen Demonstration"
+
+#~ msgid "Current language is"
+#~ msgstr "Aktuelle Sprache ist "

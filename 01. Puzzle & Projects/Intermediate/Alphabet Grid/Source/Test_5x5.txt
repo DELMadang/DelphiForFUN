@@ -1,0 +1,17 @@
+ 5 5 5 0
+ABGKY
+MECHL
+RNIDJ
+VSPOF
+XWTQU
+ In th alphabet grid at left, move from letter to adjacent letter 
+-- horizontally, vertically, or diagonally, but never repeating a 
+letter within the same word -- to spell ou a five-letter word 
+for each of the following clues.
+
+1. Judges perch
+2. Eatery
+3. Hard to please
+4. Impassive
+5. Ceiling support
+6. Cornerstone
