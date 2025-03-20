@@ -1,0 +1,106 @@
+{Portion of a Delphi file that has missing carriage returns} to be fixed}
+unit PasDoc;
+
+{$I VERSIONS.INC}
+{$I DEFINES.INC}
+
+interface
+
+uses
+  SysUtils,
+  Classes,
+  PasDoc_Items,
+  PasDoc_Languages,
+  PasDoc_Gen,
+  PasDoc_Types,
+  StringVector;
+  
+const
+  DEFAULT_VERBOSITY_LEVEL = 2;
+
+type
+  { The main object in the pasdoc application; first scans parameters, then
+    parses files.
+    All parsed units are then given to documentation generator,
+    which creates one or more documentation output files. }
+  TPasDoc = class(TComponent)
+  private
+    FDescriptionFileNames: TStringVector;
+    { Title of documentation. }
+    FTitle: string;
+    FDirectives: TStringVector;
+    FGeneratorInfo: Boolean;
+    FHtmlHelpContentsFileName: string;
+    FIncludeDirectories: TStringVector;
+    FOnMessage: TPasDocMessageEvent;
+    { The name PasDoc shall give to this documentation project,
+      also used to name some of the output files. }
+    FProjectName: string;
+    FSourceFileNames: TStringVector;
+    { All TPasUnit objects which have been created from the list of file names
+      during the parsing. }
+    FUnits: TPasUnits;
+    FVerbosity: Cardinal;
+    FCommentMarker: string;
+    FGenerator: TDocGenerator;
+    FClassMembers: TAccessibilities;
+    procedure SetDescriptionFileNames(const ADescriptionFileNames: TStringVector);
+    procedure SetDirectives(const ADirectives: TStringVector);
+    procedure SetIncludeDirectories(const AIncludeDirectores: TStringVector);
+    procedure SetSourceFileNames(const ASourceFileNames: TStringVector);
+    procedure SetGenerator(const Value: TDocGenerator);
+    procedure SetStarStyle(const Value: boolean);
+    function GetStarStyle: boolean;
+  protected
+    { Creates a @link(TPasUnit) object from the stream and adds it to
+      @link(Units). }
+    procedure HandleStream(
+      const InputStream: TStream;
+      const SourceFileName: string);
+    { Calls @link(HandleStream) for each file name in @link(FileNames). }
+    procedure ParseFiles;
+    { Searches the description of each TPasUnit item in the collection for an
+      excluded tag.
+      If one is found, the item is removed from the collection.
+      If not, the fields, methods and properties collections are called
+      with RemoveExcludedItems
+      If the collection is empty after removal of all items, it is disposed
+      of and the variable is set to nil. }
+    procedure RemoveExcludedItems(var c: TPasItems);
+    { Searches for descr tags in the comments of all TPasItem objects in C. }
+    procedure SearchDescrFileTags(var c: TPasItems);
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  public
+    { Creates object and sets fields to default values. }
+    constructor Create(AOwner: TComponent); override;
+    { }
+    destructor Destroy; override;
+
+    { Adds source filenames from a stringlist }
+    procedure AddSourceFileNames(const AFileNames: TStringList);
+    { Loads names of Pascal unit source code files from a text file.
+      Adds all file names to @link(SourceFileNames). }
+    procedure AddSourceFileNamesFromFile(const FileName: string);
+    { Raises an exception. }
+    procedure DoError(const AMessage: string; const AArguments: array of
+      const; const AExitCode: Integer);
+    { Forwards a message to the @link(OnMessage) event. }
+    procedure DoMessage(const AVerbosity: Cardinal; const AMessageType:
+      TMessageType; const AMessage: string; const AArguments: array of const);
+    { for Generator messages }
+    procedure GenMessage(const MessageType: TMessageType; const
+      AMessage: string; const AVerbosity: Cardinal);
+    { Starts creating the documentation. }
+    procedure Execute;
+  published
+    property DescriptionFileNames: TStringVector read FDescriptionFileNames
+      write SetDescriptionFileNames;
+    property Directives: TStringVector read FDirectives write SetDirectives;
+    property HtmlHelpContentsFileName: string read FHtmlHelpContentsFileName
+      write FHtmlHelpContentsFileName;
+    property IncludeDirectories: TStringVector read FIncludeDirectories write
+      SetIncludeDirectories;
+
+    property OnWarning: TPasDocMessageEvent read FOnMessage write FOnMessage;
+    { The name PasDoc shall give to this documentation project,
+      also used to name some

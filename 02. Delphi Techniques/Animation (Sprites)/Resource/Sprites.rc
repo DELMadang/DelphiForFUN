@@ -1,0 +1,15 @@
+CloudBg8  BITMAP Cloudbg8.bmp
+CloudBg24 BITMAP Cloudbg24.bmp
+LETTERD  BITMAP D.BMP
+LetterE  BITMAP E.BMP
+LetterL  BITMAP L.BMP
+LetterP  BITMAP P.BMP
+LetterH  BITMAP H.BMP
+LetterI  BITMAP I.BMP
+ManSprite0  BITMAP Man1.BMP
+ManSprite1  BITMAP Man2.BMP
+ManSprite2  BITMAP Man3.BMP
+ManSprite3  BITMAP Man4.BMP
+ManSprite4  BITMAP Man5.BMP
+ManSprite5  BITMAP Man6.BMP
+

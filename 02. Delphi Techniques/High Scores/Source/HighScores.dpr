@@ -1,0 +1,13 @@
+program HighScores;
+
+uses
+  Forms,
+  U_HighScores in 'U_HighScores.pas' {Form1};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
