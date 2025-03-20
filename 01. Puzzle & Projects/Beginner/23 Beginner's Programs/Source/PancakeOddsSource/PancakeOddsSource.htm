@@ -1,0 +1,115 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Fragment of U_PancakeOdds.rtf</TITLE>
+</HEAD>
+<BODY>
+
+<SPAN LANG="EN">
+
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><i>
+<font face="Arial" color="#FF0000">{Red text entries in curly brackets are 
+comments} </font></i></P>
+
+<B>
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial">Procedure</font></B><font face="Arial"> TForm1.SearchBtnClick(Sender: TObject) ;</font></P>
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial"> <i><font color="#FF0000">&nbsp;{We'll randomly select a 
+million pancakes and keep 2 counts:<br>
+1: The number with a good side showing and<br>
+2: The number with good side showing that is also good on the hidden side<br>
+The ratio of these two numbers is the solution we're looking for}</font></i><B><br>
+<br>
+Var</B>&nbsp;  i, TopSideGood, BackSideGood : integer; </font>
+<font face="Arial" color="#FF0000">{<i>the variables</i>}</font></P>
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"> 
+<font face="Arial"> <B>begin</B></font></P>
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"> 
+<font face="Arial">&nbsp; TopSideGood:=0; {</font><FONT FACE="Arial" COLOR="#ff0000"><I>Initialize 
+count of good sides seen}</P>
+</I></FONT><FONT FACE="Arial">
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">   &nbsp;   BackSideGood:=</FONT><FONT FACE="Arial" COLOR="#000080">0</FONT><FONT FACE="Arial">; </FONT>
+<FONT FACE="Arial" COLOR="#ff0000"><I>{Initialize count back sides that are also good}</P>
+</I></FONT><FONT FACE="Arial">
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">   <B>&nbsp; for</B> i:=</FONT><FONT FACE="Arial" COLOR="#000080">1</FONT><FONT FACE="Arial"> <B>to</B> </FONT>
+<FONT FACE="Arial" COLOR="#000080">1000000</FONT><FONT FACE="Arial"> <B>do&nbsp; </B></FONT></SPAN>
+<FONT FACE="Arial"> <font color="#ff0000"><i>{for a million times do this loop}</i></font></FONT></P>
+
+<SPAN LANG="EN">
+
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">   
+<FONT FACE="Arial"> <B>&nbsp; begin</P>
+</B>     </FONT>
+<blockquote>
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">
+	<FONT FACE="Arial" COLOR="#ff0000"><I>{Randomly pick a pancake that is not 
+	showing burned side}</P>
+	</I></FONT><FONT FACE="Arial">
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><B>case</B> random(</FONT><FONT FACE="Arial" COLOR="#000080">3</FONT><FONT FACE="Arial">) 
+	<B>of&nbsp; </B></FONT></SPAN><FONT FACE="Arial"><font color="#ff0000"><i>
+	{generate&nbsp; and test a random number 0, 1, or 2 as a pancake type}</i></font></FONT></P>
+
+<SPAN LANG="EN">
+
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">
+		<FONT FACE="Arial" COLOR="#ff0000"><I>&nbsp; {0 = Type 0 (burned, burned) - ignore it}&nbsp; </P>
+		</I></FONT><FONT FACE="Courier New" SIZE=1>
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">
+		</FONT><FONT FACE="Arial" COLOR="#000080">&nbsp; 1</FONT><FONT FACE="Arial">: 
+		</FONT><FONT FACE="Arial" COLOR="#ff0000"><I>{Type 1: pancake - Good on one side}</P>
+		</I></FONT><FONT FACE="Courier New" SIZE=1>
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">
+		</FONT><FONT FACE="Arial" COLOR="#ff0000"><I>&nbsp;&nbsp;&nbsp;&nbsp; {50-50 chance that we see the good side, random(2) will return 0 or 1 equally}</P>
+		</I></FONT><FONT FACE="Arial">
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><B>&nbsp;&nbsp;&nbsp;&nbsp; </B> </FONT></SPAN>
+		<FONT FACE="Arial">
+		if
+
+<SPAN LANG="EN">
+
+		random(</SPAN></FONT><SPAN LANG="EN"><FONT FACE="Arial" COLOR="#000080">2</FONT><FONT FACE="Arial">)=</FONT><FONT FACE="Arial" COLOR="#000080">0</FONT><FONT FACE="Arial">
+		<B>then</B> inc(TopSideGood); </FONT>
+		<FONT FACE="Arial" COLOR="#ff0000"><I>{If random(2) = 0,&nbsp; increment count 
+		of good sides selected}</P>
+		</I></FONT><FONT FACE="Courier New" SIZE=1>
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">
+		</FONT><FONT FACE="Arial" COLOR="#000080">&nbsp; 2</FONT><FONT FACE="Arial">: 
+		<B>begin</B> </FONT><FONT FACE="Arial" COLOR="#ff0000"><I>{ Type2 pancake: Good on both sides}</P>
+		</I></FONT><FONT FACE="Arial">
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inc(TopSideGood); 
+		</FONT><FONT FACE="Arial" COLOR="#ff0000"><I>{We'll always see a good side 
+		for this type, count it}</P>
+		</I></FONT><FONT FACE="Arial">
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inc(BackSideGood);  
+		</FONT><FONT FACE="Arial" COLOR="#ff0000"><I>{Other side is always good also 
+		so count good back sides}</P>
+		</I></FONT><FONT FACE="Arial">
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><B>&nbsp;&nbsp;&nbsp;&nbsp; end</B>;</P>
+		<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><B>&nbsp; end</B>;</P>
+	
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><B>end</B>;</FONT><I><FONT FACE="Arial" COLOR="#ff0000">{end of trials loop}</P>
+	</FONT></I><FONT FACE="Arial">
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><B>with</B> memo1.Lines 
+	<B>do</P></B>
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><B>begin&nbsp; 
+	{</B></SPAN><font color="#ff0000"><i>Display results}</i></font></P>
+
+<SPAN LANG="EN">
+
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp; Add(</FONT><FONT FACE="Arial" COLOR="#000080">'----------------------------------------------'</FONT><FONT FACE="Arial">);</P>
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp; Add(format(</FONT><FONT FACE="Arial" COLOR="#000080">'In %d trials, %d showed an OK side. '</FONT><FONT FACE="Arial">,[</FONT><FONT FACE="Arial" COLOR="#000080">1000000</FONT><FONT FACE="Arial">, TopSideGood]));</P>
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp; Add(format(</FONT><FONT FACE="Arial" COLOR="#000080">'Of these, %d (%.1f%%) were OK on the other side.'</FONT><FONT FACE="Arial">,</P>
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [BackSideGood, 
+		</FONT><FONT FACE="Arial" COLOR="#000080">100</FONT><FONT FACE="Arial">*BackSideGood/TopSideGood]));</P>
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp; Add(</FONT><FONT FACE="Arial" COLOR="#000080">#13</FONT><FONT FACE="Arial">+</FONT><FONT FACE="Arial" COLOR="#000080">'While it is true that we will draw equal numbers of Types 1 and 2 pancakes, '</P>
+	</FONT><FONT FACE="Arial">
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	+</FONT><FONT FACE="Arial" COLOR="#000080">' half of the time we will be seeing the burned side of the Type 1''s and discard '</P>
+	</FONT><FONT FACE="Arial">
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</FONT><FONT FACE="Arial" COLOR="#000080">'without counting them thus counting twice as many Type 2''s  as Type 1''s'</FONT><FONT FACE="Arial">);</P>
+	<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"><B>end</B>;</P>
+</blockquote>
+<P ALIGN="LEFT" DIR="LTR" style="margin-top: 0; margin-bottom: 0"> <B>&nbsp; end</B>;</P>
+</FONT></SPAN></BODY>
+</HTML>
