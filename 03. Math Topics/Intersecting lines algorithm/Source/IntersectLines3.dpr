@@ -1,0 +1,13 @@
+program IntersectLines3;
+
+uses
+  Forms,
+  U_IntersectLines3 in 'U_IntersectLines3.pas' {Form1};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

@@ -1,0 +1,10 @@
+Problem 17 Theory:   If A and B are to play each other, it will be in Round 1, 2, or 3.
+
+Well analyze the probability of meeting for each round separately and sum them to get the overall number.  For Round 1, A can be in any position and there is a 1 in 7 (1/7) chance that B will be in the opponent position.
+
+If they did not meet in Round 1, then the chances of meeting in Round 2 will be "the chance that they didn't meet" (6/7) x "the chance that A won his match" (1/2) X "the chance that B won his match" (1/2) X "the chance that they play each other in Round 2" (1/3), 1/3 because A can be in any of the 4 positions and there is 1 chance in 3 that B will be in the slot opposing him.  So the chance of A vs B in Round 2 is 6/7 x 1/2 x 1/2 x 1/3 = 1/14.
+
+For Round 3 they both must have survived Round 1 (6/7x1/4) x  "and did not play each other in Round 2" (2/3) x "chance that both won their round 2 games (1/4). So Round 3 chance is 6/7 X 1/4 X 2/3 X 1/4 = 1/28.
+
+Overall chance of meeting therefore is 1/7+1/14+1/28 or 7/28 = 1/4.  Can this be correct? Run the 1,000,000 simulated trials to find out.
+

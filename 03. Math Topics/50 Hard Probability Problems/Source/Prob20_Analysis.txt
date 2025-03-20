@@ -1,0 +1,80 @@
+Problem 20 Theory:  The logical strategy, which turns out to be not the best, is for each man to shoot at the most accurate shooter remaining in the contest. What are A's odds under this strategy?  
+
+The three-man match with one of shooters guaranteed to hit his target soon resolves into a two man contest where things get interesting.  To help understand, we'll consider the  two-man duel first where neither is a perfect shooter.  
+
+For each shooter we will use the following notation to follow the tree of possible outcomes:
+
+ACH(Pah)  ==>  A shoots at C and hits with probability Pah
+ACM(1-Pah) ==>  A shoots at C and misses with probability 1-Pah
+CAH(Pch) ==> C shoots at A and hits with probability Pch
+CAM(1-Pch) ==> C shoots at A and misses with probability 1-Pch
+
+As the match goes on, we will  see a geometric sequence of win probabilities forming for each player.  For each, his probability  of winning decreasing by a constant ratio, (r),  for each of his shots.  The constant factor "r" is the chance that both you and your opponent miss the next two shots.   This is an infinite sequence and we need the sum of all terms to get te overall probability of success.   Term N of a geometric sequence which has starting value "a" and ratio between adjacent terms of "r"  is defined by "a * r^(N-1) " and the sum of the sequence is "a/(1-r)".  See the "geometric progressions" article at Wikipedia for the derivatiion.
+
+Assume A shoots first, Pah=.3, Pch=.5. Each shot gets indented from the previous shot position:
+
+ACH(0.3)  A kills C
+..  A wins! Probability of this outcome = 0.3 = inital value "a" of A's winning progression
+ACM(0.7)  A misses B, etc.
+..  CAH(0.5)
+..    C wins!    Probability of this outcome = 0.7 (initial miss by A) x 0.5 (final hit by C)  = .35 = initial value "a" of C's winning progression
+..  CAM(.5)
+....    ACH(0.3)
+....      A wins!  Probability = 0.7 (A missed C) *0 .5 (C missed A) * 0.3 (A hit C)= 0.105
+....    ACM(0.7)
+......      CAH(0.5)
+......         C wins!  Probability = 0.7 (A missed C) * (0.5 *0 .7) (C missed A & A missed C) * 0.5 (C hit A)= 0.1225
+......      CAM(0.5)
+........        ACH(0.3)
+........            A wins!  Probability = 0.3 * (0.7  *0 .5)^2 = .03675
+........       ACM(0.7)
+..........          CAH(0.5)
+..........             C wins! Probability = 0.7 * (0.5 *0 .7)^2 (C missed A & A missed C twice) * 0.5 = .042875
+..........          CAM (0.5)
+        .... etc.
+
+The probabilities of the six shots shown add  up to about .96.  If we continued evaluating, the sum would approach 1.0 (since eventually someone will win).  Notice that before each shot by A, his chance of missing and living to get another shot is the chance that both A and B miss (.7 *.5 = .35). His chance of winning in N shots forms a geometric sequence chance of getting to that shot (r=0.35^(N-1)) times his chance of winning on shot N (a=0.3).  Fortunately, for ratios (r) less than 1.0, the sum of this infinite geometric converges to "a/(1-r)", in our case P(A wins)=(0.3/(1-0.35) = 0.4615.  For completeness, in C's winning progression a=0.7 *0.5 and r =0 .5 *0 .7 so P(C wins)= 0.35/0.65=0.5395.  The 2 winning probabilities sum to 1.000, so all looks OK.  For mor information,  see the "geometric progressions" article at Wikipedia.
+
+For the 3 person shootout, since one of the contestants (B) is a perfect shot, the contest will soon end or evolve to a two person shootout between A and C, at which point the above 2-shooter analysis applies.  Since B is the best shot, we will shoot at him first.  As before, for each shot, there are two possible outcomes: "Hit" or "Miss".  
+
+ABH (0.3)   A kills B
+..  CAH(.5)  C kills A 
+..      C wins!  P=0.3 *0.5=0.15
+..  CAM(0.5)   C misses A, etc.
+....    ACH(0.3)
+....        A Wins! P=0.3 * 0.5 * 0.3 = 0.045
+....    ACM(0.7)
+......      CAH(0.5)
+......        C wins! P= 03 * 0.5 * (0.7 * 0.5) = 0.0525
+......      CAM (0.5)
+........        ACH(0.3)
+........            A Wins! P=0.3 * 0.5 * (0.5 * 0.7) * 0.3 = .001575
+........        ACM(0.7)
+              ... repeat the 4 outcomes of the previous 2 shots until A or C has a hit.
+ABM(0.7)
+..  BCH(1.0)
+....    ABH(0.3)
+....        A wins! P=0.7 * 0.3 = 0.21
+....    ABM(0.7)
+......      BAH(1.0)
+......         B wins!   P=0.7 * 0.7 = 0.49
+.....      BAM(0.0)
+..  BCM(0.0)
+
+If A misses B on his first shot, the match is a short one: A wins in 3 shots (with probability 0.21) or B wins in 4 shots (P=0.49), accouting for 70% of the outcomes.
+. 
+On the other hand if A is lucky enough to hit B with his first shot, there is a 50-50 chance that C will hit A on the second shot and be the winner.  If C misses, we are on the track for the 2 person shootout previously described.  The cumulative chance of reaching this stage and winning is the product of the previous probabilities (0.3 *0.5) times the probiblity of eventually winning on some shot from here (0.3) so "a" in our geometric sequence is 0.3 * 0.5 * 0.3 = 0.045.   Also r = 0.7 * 0.5= 0.35 so the cumulative probability is 0.045 / (1-0.35)=0.0692 and the overall probability of A winning is 0.21 + 0.0692 = 0.2792.
+
+If A shoots into the ground first, his odds of staying alive improve to 30% so his chance of survival is better, but still not good!
+i.e:
+
+AX(1.0)   -  A deliberately shoots a tree or soimething
+..  BCH (1.0) 
+....    ABH (.3)
+....        A wins  p = 1.0 * 1.0 * 0.3  = 0.3
+.....   ABM (.7)
+..   BAH(1.0)
+..        B wins!  p = 1.0 * 1.0 * 0.7 * 1.0 = 0.7
+  BCM (0.0)
+
+

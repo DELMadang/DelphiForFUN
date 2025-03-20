@@ -1,0 +1,14 @@
+Problem 18: When 100 coins are tossed, what is the probability that exactly 50 are heads?
+
+The approach for finding the probability of an exact number of outcomes is to compute the probability for one specific outcome and multiply that number by the number of possible outcomes that meet the success criteria.
+
+In this this case, the probability that the first 50 coins are heads and the rest tails is 1 out of the total number of outcomes.  Since there are only 2 possible outcomes (head or tails) for each coin, the total number is 2 multiplied by itself 100 times or 2^100.
+
+The last thing we need is the number of ways that 50 heads be chosen from the 100 coins.  That is the number of ways which we can choose 50 of 100 items which is a well known problem in Combinatorics.  I like the factorial form of the formula because it makes sense to me and is therefore easy to remember. The number of ways to choose subsets of size K from a set of size N is (N!/(N-K)!)/K!. (New newbies, X factorial, denoted X!, is the product of all integers from 1 through X.)
+
+It looks complicated, but let's walk though a simple example for the chance of 3 heads in 6 coins.  Assume we have the six coins lined up in a row with tails up and we will choose 3 to turn over in all possible ways.  We have 6 choices for the 1st coin, then 5 choices for picking the 2nd coin and 4 choices for the third. If order mattered, the number of ways to choose the 3 would therefore be 6x5x4 = 120 ways.  This is the N!/(N-K)! part of the formula (6!)/(6-3)!=(6x5x4x3x2x1)/(3x2x1)=120 representing the number ordered sets than can be created.
+But in our case we do not care if we turned the [1,4,6] to heads in that order or in order [1,6,4], [4,1,6], [4,6,1], [6,1,4] or [6,4,1].  In fact, for K objects, there are always K! ways that they could have been chosen and this is the K! term in the divisor of the binomial coefficient formula. So of the 120 sets of 3 coins from 6, there are six of each arrangement that are duplicates and the total distinct combinations is only 1/6 of 120 =20.  As the final step, we divide the 20 sucess outcomes by the 64 total outcomes and get the probability as 20/64=0.3125.
+
+For the 100 coin set, any good scientific calculator like the Windows calculator program will let us compute how many throws will have exactly 50 heads is 100!/50!/50!/2^100 = 0.0796 or about 8% of the time.
+
+

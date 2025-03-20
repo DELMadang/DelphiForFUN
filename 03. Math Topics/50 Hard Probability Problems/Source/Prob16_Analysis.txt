@@ -1,0 +1,7 @@
+Problem 16 Theory:  Wherever A is positioned, there is only 1 of 7 possible positions for B in which he will play A.  Therefore, there are 6 chances in 7 that B will not play A in the first round.
+
+In round 2, player A moves on for sure but there is only 1 of 3 possible positions for B where he will play A.  So, if B reaches round 2 (P=6/7), the chance that he will not meet       +' A is 2 out of 3 (P=2/3).  The chance of both of these outcomes is (6/7)*(2/3)=12/21 so P=.571 or 57.1%.'
+
+And, of course, if he didn't meet A in the 1st or 2nd rounds, there is 100% chance that he will lose to A in the 3rd round and receive the runnerup trophy.
+
+Therefore the complete probability calculation of B receiving the runner-up trophy after all 3 rounds is (6/7)*(2/3)*(1/1) = .571.
