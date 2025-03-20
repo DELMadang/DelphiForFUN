@@ -1,0 +1,11 @@
+anaglyptics=art of carving in bas-relief
+anagraphy=art of constructing catalogues
+anthropology=study of human cultures
+bibliology=study of books
+Bibliology=study of books
+Biometrics=study of biological measurement
+bionomics=study of organisms interacting in their environments
+hygiastics=science of health and hygiene
+hygienics=study of sanitation; health
+hygiology=hygienics; study of cleanliness
+zymurgy=branch of chemistry dealing with brewing and distilling  
